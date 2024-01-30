@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      background-color: #f3f4f6;
+    }
+
+    body > div {
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    }
+
+    .enlaceLeccion {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333333;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background-color: #e5e7eb;
+      transition: .3s;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .enlaceLeccion:hover {
+      background-color: #9ca3af;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      box-sizing: border-box;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    function cargarLecciones() {
+      var totalLecciones = 49;
+      var contenedor = document.body;
+
+      for (var i = 1; i <= totalLecciones; i++) {
+        var bloque = document.createElement('div');
+        var carpeta = 'Lección' + i.toString().padStart(2, '0');
+        var rutaHtml = carpeta + '/index.html';
+
+        var iframe = document.createElement('iframe');
+        iframe.src = rutaHtml;
+
+        bloque.appendChild(iframe);
+
+        var enlace = document.createElement('a');
+        enlace.className = 'enlaceLeccion';
+        enlace.innerText = 'Ir a la Lección';
+        enlace.href = rutaHtml;
+
+        bloque.appendChild(enlace);
+
+        contenedor.appendChild(bloque);
+      }
+    }
+
+    cargarLecciones();
+  </script>
+
+</body>
+
+</html>
