@@ -1,0 +1,146 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 32em;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    margin: 60px auto;
+}
+.caja{
+    text-align: left;
+    justify-content: left;
+}
+.intro{
+    padding: 30px 30px 15px 30px;
+}
+.intro h1{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.intro p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    color: grey;
+}
+.intro img{
+    max-width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+}
+.tiempo{
+    background-color:  hsl(330, 100%, 98%);
+    width: 420px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.tiempo h3{
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+.tiempo ul{
+    line-height: 25px;
+    padding-left: 22px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0px;
+    color: hsl(332, 51%, 32%);
+    text-indent: 10px;
+}
+.tiempo ul li{
+    color: gray;
+}
+.ingredientes{
+    padding: 0 20px;
+    width: 500px;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.ingredientes ul{
+    color: gray;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-indent: 10px;
+    line-height: 22px;
+}
+hr{
+    width: 90%;
+    border: 1px solid rgb(240, 238, 238);
+}
+.instrucciones{
+    padding: 0 20px;
+    width: 500px;
+}
+.instrucciones ol{
+    color: gray;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-indent: ;
+    line-height: 20px;
+    text-align: left;
+    margin-right: 35px;
+}
+.nutricion{
+    padding: 0 20px;
+    width: 500px;
+}
+.nutricion p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    color: grey;
+    margin-left: 20px;
+}
+.nutricion table{
+    border-collapse: separate;
+    border-spacing: ;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+.tabla1{
+    color: gray;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    /* border-bottom: 1px solid rgb(240, 238, 238); */
+}
+.tabla2{
+    color: hsl(14, 45%, 36%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    /* border-bottom: 1px solid rgb(240, 238, 238); */
+}
+.nutricion table td{
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+}
+table td:first-child{
+    padding-right: 150px;
+}
+
+
+
