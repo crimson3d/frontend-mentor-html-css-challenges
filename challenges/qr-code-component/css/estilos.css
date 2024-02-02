@@ -7,7 +7,7 @@ div.tarjeta {
   justify-content: center;
   border-radius: 15px;
   background-color: rgb(254, 254, 254);
-  width: 300px;
+  max-width: 300px;
   margin: 300px auto;
 }
       
