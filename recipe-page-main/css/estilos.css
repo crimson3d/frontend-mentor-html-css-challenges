@@ -13,6 +13,7 @@ body{
     border-radius: 15px;
     align-items: center;
     margin: 60px auto;
+    padding: 20px;
 }
 .caja{
     text-align: left;
@@ -64,6 +65,9 @@ body{
 .tiempo ul li{
     color: gray;
 }
+.tiempo li::marker {
+    color: hsl(332, 51%, 32%);
+  }
 .ingredientes{
     padding: 0 20px;
     width: 500px;
@@ -74,7 +78,7 @@ h2{
     font-weight: 400;
     font-size: 20px;
     margin-top: 25px;
-    margin-left: 20px;
+    
 }
 .ingredientes ul{
     color: gray;
@@ -84,6 +88,9 @@ h2{
     text-indent: 10px;
     line-height: 22px;
 }
+.ingredientes li::marker {
+    color: hsl(332, 51%, 32%);
+  }
 hr{
     width: 90%;
     border: 1px solid rgb(240, 238, 238);
@@ -102,6 +109,9 @@ hr{
     text-align: left;
     margin-right: 35px;
 }
+.instrucciones li::marker {
+    color: hsl(332, 51%, 32%);
+  }
 .nutricion{
     padding: 0 20px;
     width: 500px;
@@ -111,36 +121,36 @@ hr{
     font-size: 11px;
     line-height: 15px;
     color: grey;
-    margin-left: 20px;
+    
 }
 .nutricion table{
-    border-collapse: separate;
-    border-spacing: ;
-    margin-left: 40px;
     margin-bottom: 25px;
+    width: 100%;
+    border-collapse: collapse; 
 }
-.tabla1{
+
+.nutricion table tr {
+    border-bottom: 1px solid rgb(240, 238, 238);
+}
+
+.nutricion table td{
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+}
+.nutricion table td:nth-child(1) {
     color: gray;
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
     font-size: 12px;
     /* border-bottom: 1px solid rgb(240, 238, 238); */
 }
-.tabla2{
+.nutricion table td:nth-child(2){
     color: hsl(14, 45%, 36%);
-    font-family: 'Outfit', sans-serif;
+    
     font-weight: 600;
-    font-size: 12px;
+    
     /* border-bottom: 1px solid rgb(240, 238, 238); */
 }
-.nutricion table td{
-    text-align: left;
-    margin: auto;
-    padding: 10px;
-}
-table td:first-child{
-    padding-right: 150px;
-}
-
-
-
