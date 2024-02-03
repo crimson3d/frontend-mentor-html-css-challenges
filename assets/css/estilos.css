@@ -53,6 +53,12 @@ h2{
     color: #457B9D;
     font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 }
+@media only screen and (max-width: 750px) {
+    h1{
+        font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+        padding: 1rem;
+    }
+}
 
 /* --font-size-sm: clamp(0.62rem, 0.21vw + 0.57rem, 0.73rem);
 --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
