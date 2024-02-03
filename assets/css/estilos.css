@@ -3,7 +3,7 @@ html{
     min-height: 100%;
 }
 body{
-    background: linear-gradient(#F1FAEE, #A8DADC);
+    background: linear-gradient(#9ebaeb, #cca8dc);
 }
 .container{
     display: grid;
