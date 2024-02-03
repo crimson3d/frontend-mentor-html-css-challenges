@@ -1,0 +1,42 @@
+body{
+    background-color:  hsl(0, 0%, 8%);
+    
+
+}
+.center{
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: hsl(0, 0%, 12%);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    font-family: 'Inter', sans-serif;
+}
+.container h2{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.container h5{
+    color: hsl(75, 94%, 57%);
+    margin-top: 8px;
+    font-weight: 600;
+}
+.container p{
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.social{
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 300px;
+}
+.attribution{
+    text-align: center;
+}
