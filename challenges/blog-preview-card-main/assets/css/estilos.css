@@ -1,0 +1,58 @@
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 22rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 15rem;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+}
+.ilustration{
+    border-radius: 10px;
+}
+.card h4{
+    background-color: hsl(47, 88%, 63%);
+    max-width: 4rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.card h5{
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.card h2{
+    color: hsl(47, 88%, 63%);
+    margin-bottom: 10px;
+}
+.card p{
+    color: hsl(0, 0%, 50%);
+    font-weight: lighter;
+}
+.author{
+    display: flex;
+    gap: 10px;
+}
+.author img{
+    max-width: 30px;
+    max-height: 30px;
+    display: inline;
+    align-self: center;
+}
+.author p{
+    color: black;
+    display: inline;
+    align-self: center;
+}
+.attribution{
+    text-align: center;
+}
