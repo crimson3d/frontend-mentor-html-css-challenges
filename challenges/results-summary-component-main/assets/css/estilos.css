@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin-top: 20rem;
+    /* background: green; */
+    
+}
+.layout {
+    display: flex;
+    max-width: 30rem;
+    margin: auto;
+    background-color: white;
+    font-family: 'Hanken Grotesk', sans-serif; 
+    box-shadow: 4px 4px 10px hsla(234, 85%, 45%, 0.121);
+    border-radius: 0 25px 25px 0;
+    
+}
+.results {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    border-radius: 20px;
+    padding: 20px;
+}
+.results h3 {
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.results .points {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 7rem;
+    padding: 25px 0;
+    
+}
+.points h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    font-size: 40px;
+}
+.points p {
+    font-size: 10px;
+}
+.results h2 {
+    color: white;
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.results h4 {
+    font-weight: 500;
+    font-size: 10px;
+    padding: 0 30px 10px;
+}
+.summary {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 25px;
+    border-radius: 0 25px 25px 0;
+    color: grey;
+    font-size: 14px
+}
+.summary h4 {
+    display: inline;
+    font-weight: lighter; 
+}
+.summary img {
+    width: 15px;
+}
+span {
+    font-weight: bold;
+    margin-left: 50px;   
+}
+.reaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(0, 100%, 67%, 0.10);
+    padding: 8px;
+    border-radius: 5px;
+    width: 11rem;
+}
+.reaction h4 {
+    color: hsl(0, 100%, 67%);
+}
+.memory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(39, 100%, 56%, 0.10);
+    padding: 8px;
+    border-radius: 5px;
+    width: 11rem;
+}
+.memory h4 {
+    color: hsl(39, 100%, 56%);
+}
+.verval {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(166, 100%, 37%, 0.10);
+    padding: 8px;
+    border-radius: 5px;
+    width: 11rem;
+}
+.verval h4 {
+    color: hsl(166, 100%, 37%);
+}
+.visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(234, 85%, 45%, 0.10);
+    padding: 8px;
+    border-radius: 5px;
+    width: 11rem;
+}
+button {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+    border: 0;
+    color: white;
+}
+.attribution {
+    text-align: center;
+    margin-top: 50px;
+}
+@media only screen and (min-width: 425px) {
+    
+    body {
+        margin-top: 15rem;
+    }
+    .layout {
+        flex-direction: column;
+        max-width: 18rem;
+    }
+    .summary {
+        max-height: 50rem;
+        border-radius: 0;
+        height: 20rem;
+    }
+    span {
+        margin-left: 95px;
+    }
+    .reaction {
+        width: 14rem;
+    }
+    .memory {
+        width: 14rem;
+    }
+    .verval {
+        width: 14rem;
+    }
+    .visual {
+        width: 14rem;
+    }
+}
+
+
