@@ -135,6 +135,9 @@ button {
     border: 0;
     color: white;
 }
+button:active {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
 .attribution {
     text-align: center;
     margin-top: 50px;
