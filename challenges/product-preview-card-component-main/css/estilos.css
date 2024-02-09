@@ -1,28 +1,130 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 body {
     background-color: hsl(30, 38%, 92%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-.photo {
+
+.wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
+    flex-direction: row;
+    max-width: 600px;
+    max-height: 450px;
 }
+
+.wrapper > div {
+    flex: 1;
+}
+
+.parfum {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 32px;
+    border-radius: 10px 0 0 10px;
+}
+
 .file {
     background-color: white;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    height: 450px;
+    gap: 15px;
+    border-radius: 0 10px 10px 0;
+    padding: 32px;
 }
+.file h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+.file h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 30px;
+
+}
+
+.file p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.price {
+    display: flex;
+}
+
+.price h2 {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+}
+
+.price h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-top: 12px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:active {
+    background-color: hsl(159, 37%, 16%);
+}
+
 .attribution {
-    display: block;
-    margin: 20px;
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 375px){
+    
+    .wrapper {
+        flex-direction: column;
+        max-width: 360px;   
+        max-height: 600px;
+    }
+  
+    
+    .parfum {
+        background-image: url(/frontend-mentor-html-css-challenges/challenges/product-preview-card-component-main/images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+        /* height: 250px; */
+    }
+    .file {
+        border-radius: 0 0 10px 10px;
+        padding: 25px;
+        /* height: 400px; */
+    }
 }
