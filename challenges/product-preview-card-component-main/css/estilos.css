@@ -112,19 +112,18 @@ button:active {
     
     .wrapper {
         flex-direction: column;
-        max-width: 360px;   
-        max-height: 600px;
+        margin: 0 2rem;
     }
   
     
     .parfum {
         background-image: url(/frontend-mentor-html-css-challenges/challenges/product-preview-card-component-main/images/image-product-mobile.jpg);
         border-radius: 10px 10px 0 0;
-        /* height: 250px; */
+        height: 100%;
     }
     .file {
         border-radius: 0 0 10px 10px;
         padding: 25px;
-        /* height: 400px; */
+        height: 50%;
     }
 }
