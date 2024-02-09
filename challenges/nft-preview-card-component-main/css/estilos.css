@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    font-size: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 14px;
+    padding: 22px;
+    max-width: 22rem;
+    height: 37rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card,
+.cube {
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 600;
+    color: white;
+}
+
+.card p {
+    font-size: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.time h4 {
+    font-size: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time,
+.eth {
+    display: flex;
+    align-items: center;
+}
+
+.eth img {
+    margin-right: 0.4rem;
+}
+
+.days img {
+    margin-right: 0.4rem;
+}
+
+.time,
+.days {
+    display: flex;
+    align-items: center;
+
+}
+
+.avatar {
+    max-width: 2rem;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    margin-right: 1rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+}
