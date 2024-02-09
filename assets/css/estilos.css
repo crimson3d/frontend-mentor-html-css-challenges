@@ -4,7 +4,8 @@ html{
     min-height: 100%;
 }
 body{
-    background: linear-gradient(#9ebaeb, #cca8dc);
+    /* background: linear-gradient(#9ebaeb, #cca8dc); */
+    background: rgb(255, 166, 0);
 }
 .container{
     display: grid;
@@ -18,8 +19,8 @@ h1{
     text-align: center;
     font-family: 'Press Start 2P', system-ui;
     font-size: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
-    color: #E63946;
-    text-shadow: 2px 2px 2px #1D3557;
+    color: white;
+    text-shadow: 3px 3px black;
     line-height: 1.25;
     padding: 5rem;
     /* background-color: #1D3557; */
@@ -27,15 +28,23 @@ h1{
 .card{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    box-shadow: 2px 2px 2px #457B9D;
-    background-color: #A8DADC;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 10px 10px black;
+    background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: #1D3557;
 }
 h2{
     font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+    color: black;
+    text-transform: uppercase;
+    /* text-shadow: 2px 2px rgb(255, 166, 0); */
+    /* background-color: rgba(255, 166, 0, 0.226); */
+    /* max-width: 30rem;
+    padding: 10px;
+    border-radius: 10px; */
 }
 .card iframe{
     padding: 0 40px;
@@ -44,13 +53,15 @@ h2{
     text-decoration: none;
     margin: 20px;
     font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+    color: rgb(247, 175, 43);
+    /* text-shadow: 2px 2px black; */
 }
 .card a:hover{
-    color: #E63946;
+    color: rgb(252, 130, 0);
 }
 .card p{
     margin: 0 40px 20px 40px;
-    color: #457B9D;
+    color: grey;
     font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 }
 @media only screen and (max-width: 750px) {
