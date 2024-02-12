@@ -46,9 +46,12 @@ h2{
     padding: 10px;
     border-radius: 10px; */
 }
-.card iframe{
-    padding: 0 40px;
+
+img {
+    width: 100%;
+    height: auto;
 }
+
 .card a{
     text-decoration: none;
     margin: 20px;
