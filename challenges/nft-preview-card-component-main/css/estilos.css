@@ -36,9 +36,21 @@ img {
     border-radius: 10px;
 }
 
+.cube:hover {
+    filter: hue-rotate(20deg);
+}
+
 .card h3 {
     font-size: 600;
     color: white;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card h3:hover {
+    color: hsl(178, 100%, 50%)
 }
 
 .card p {
@@ -74,7 +86,14 @@ img {
 .days {
     display: flex;
     align-items: center;
+}
 
+.time, span {
+    color: white;
+}
+
+.time, span:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .avatar {
