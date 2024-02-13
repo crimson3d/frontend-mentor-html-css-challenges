@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 69.5rem;
+    min-height: 446px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 74px 74px 70px 74px;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+.info h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.info p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+.card_bottom {
+    display: flex;
+    gap: 70px;
+}
+
+.card_bottom h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card_bottom p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.image-container {
+    position: relative;
+    max-width: 100%; /* Para hacerlo responsive */
+}
+
+.image-container img {
+    border-radius: 0 10px 10px 0;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    background-color: hsla(277, 64%, 61%, 0.5); /* Filtro de color semitransparente */
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 375px) {
+    
+    body {
+        flex-direction: column;
+    }
+    
+    .container {
+        flex-direction: column-reverse;
+        max-width: 32rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+        top: 0;
+        left: 0;
+    }
+
+    .overlay {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .info {
+        padding: 35px 15px 10px 15px;
+    }
+
+    .info h3 {
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .info p {
+        padding: 15px 0 25px 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .card_bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  
+
+}
