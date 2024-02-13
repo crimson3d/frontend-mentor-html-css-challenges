@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 69.5rem;
-    min-height: 446px;
+    height: 446px;
 }
 
 .info {
@@ -104,6 +104,10 @@ span {
         align-items: center;
         justify-content: center;
         margin: 0 10px;
+       
+    }
+    .image-container::after {
+        border-radius: 10px 10px 0 0;
     }
 
     .image-container img {
@@ -114,12 +118,10 @@ span {
         left: 0;
     }
 
-    .overlay {
-        border-radius: 10px 10px 0 0;
-    }
 
     .info {
         padding: 35px 15px 10px 15px;
+        border-radius: 0 0 10px 10px;
     }
 
     .info h3 {
