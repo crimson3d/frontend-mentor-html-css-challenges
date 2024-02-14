@@ -24,10 +24,11 @@ body{
     margin-bottom: 5px;
     font-weight: 700;
 }
-.container h5{
+.container h3{
     color: hsl(75, 94%, 57%);
     margin-top: 8px;
     font-weight: 600;
+    font-size: 14px;
 }
 .container p{
     font-size: 13px;
