@@ -85,8 +85,8 @@ button:hover{
 
 .attribution {
     position: absolute;
-    bottom: 20px;
-    z-index: -1;
+    bottom: 0;
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -112,6 +112,10 @@ button:hover{
 
     p {
         line-height: 1.3rem;
+    }
+
+    .attribution {
+        position: sticky;
     }
 
 }
