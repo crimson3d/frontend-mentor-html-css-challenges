@@ -43,5 +43,5 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 Thanks to all the people 
 
-Many thanks to all the people who support me in this new adventure, to Pol, my master Yoda and mentor to become a developer, to May, the best companion and love I could ever have, and to Lara, probably the reason why now I'm doing this. Love.
+Many thanks to all the people who support me in this new adventure, to Pol Guillamon (https://github.com/Qu4k3), my master Yoda and mentor to become a developer, to May, the best companion and love I could ever have, and to Lara, probably the reason why now I'm doing this. Love.
 
