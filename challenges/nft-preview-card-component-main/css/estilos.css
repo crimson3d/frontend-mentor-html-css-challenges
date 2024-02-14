@@ -113,6 +113,5 @@ img {
 
 .attribution {
     position: absolute;
-    bottom: 10px;
-    z-index: -1;
+    bottom: 0;
 }
