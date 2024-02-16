@@ -32,23 +32,23 @@ body {
     font-family: "Kumbh Sans", sans-serif;
 }
 
-.card_avatar {
+.card__avatar {
     width: 34%;
     border-radius: 100%;
     border: 5px solid white;
 }
 
-.card_title--age {
+.card__title--age {
     font-weight: lighter;
     color: hsl(0, 0%, 59%);
     margin-left: 5px;
 }
 
-.card_city {
+.card__city {
     color: hsl(0, 0%, 59%);
 }
 
-.card_divisor {
+.card__divisor {
     width: 100%;
     background-color: hsl(0, 0%, 59%);
     height: 2px;
@@ -56,7 +56,7 @@ body {
     border: none;
 }
 
-.card_bottom {
+.card__bottom {
     display: flex;
     width: 90%;
     align-items: center;
@@ -64,7 +64,7 @@ body {
     text-align: center;
 }
 
-.card_bottom_column_title {
+.column__title {
     color: hsl(0, 0%, 59%);
     font-size: 9px;
     letter-spacing: 2px;
