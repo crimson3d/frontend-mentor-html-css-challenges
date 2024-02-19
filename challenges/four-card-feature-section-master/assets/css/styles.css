@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: hsl(0, 0%, 98%);
+    font-size: 15px;
+}
+
+.top {
+    max-width: 32rem;
+    text-align: center;
+}
+
+.top__title {
+    font-size: 2.25rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.top__title--span {
+    font-weight: 200;
+}
+
+.top__subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 22rem 22rem 22rem;
+    grid-template-rows: 16rem 16rem;
+    gap: 1.5rem;
+}
+
+.card__grid1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 9rem;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card__grid2 {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card__grid3 {
+    grid-row-start: 2;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card__grid4 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 9rem;
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.cards__card {
+    height: 16rem;
+    box-shadow: 0 10px 20px hsla(234, 31%, 53%, 0.225);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card__title {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 1.3rem;
+  
+}
+
+.card__text {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+    position: relative;
+    top: 10px;
+}
+
+.card__img {
+    position: relative;
+    top: 54px;
+    left: 225px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;  
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        margin-top: 400px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .card__grid1 {
+        margin-top: 0;
+    }
+    .card__grid4 {
+        margin-top: 0;
+    }
+    .top__title {
+        font-size: 1.5rem;
+    }
+    .top__subtitle {
+       margin: 0 20px;
+    }
+
+    .attribution {
+        position: sticky;
+    }
+}
