@@ -21,7 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/profile-card-component-main/index.html)
+- Solution URL: [Add solution URL here](https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/social-proof-section-master/index.html)
 
 ## My process
 
