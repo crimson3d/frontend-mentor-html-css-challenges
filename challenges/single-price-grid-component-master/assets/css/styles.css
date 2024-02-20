@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     padding: 50px;
@@ -17,8 +17,8 @@ body {
 
 .card {
     display: grid;
-    grid-template-columns: 9.9rem 9.9rem;
-    grid-template-rows: 6.8rem 8.1rem;
+    grid-template-columns: 19.9rem 19.9rem;
+    grid-template-rows: 13.5rem 16rem;
     grid-template-areas: "top top"
                          "left right";
     font-family: "Karla", sans-serif;
@@ -26,31 +26,31 @@ body {
 
 .card__top {
     grid-area: top;
-    padding: 1.2rem 1rem 1.4rem 1.29rem;
+    padding: 2.6rem 1rem 1.4rem 2.7rem;
     border-radius: 5px 5px 0 0;
     background-color: white;
 }
 
 .top__title {
     color: hsl(179, 62%, 43%);
-    font-size: 0.7rem;
-    margin-bottom: 0.85rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
 }
 
 .top__subtitle {
     color: hsl(71, 73%, 54%);
-    font-size: 0.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
     font-weight: 400;
 }
 
 
 .top__text {
     color: hsl(218, 22%, 67%);
-    font-size: 0.45rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 0.8rem;
+    line-height: 1.5rem;
 }
 
 .card__left {
@@ -60,42 +60,42 @@ body {
     grid-area: left;
     background-color: hsl(179, 62%, 43%);
     color: white;
-    padding: 1.25rem 1rem 1rem 1.25rem;
+    padding: 2.6rem 1rem 1rem 2.7rem;
     border-radius: 0 0 0 5px;
    
 }
 
 .left__title {
-    font-size: 0.55rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .left__price {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-bottom: 0.22rem;
 }
 
 .left__month {
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: 200;
     position: relative;
     bottom: 3px;
 }
 
 .left__text {
-    font-size: 0.45rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .left__button {
     color: white;
-    font-size: 0.45rem;
+    font-size: 1rem;
     border: none;
     border-radius: 4px;
     background-color: hsl(71, 73%, 54%);
-    height: 1.5rem;
-    max-width: 100%;
+    padding: 1rem ;
+    max-width: 90%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.126);
 }
 
@@ -106,19 +106,19 @@ body {
     grid-area: right;
     background-color: hsl(179, 48%, 61%);
     color: white;
-    padding: 1.2rem 1.3rem;
+    padding: 2.6rem 2.7rem;
     border-radius: 0 0 5px 0;
 }
 
 .right__title {
-    font-size: 0.55rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .right__text {
-    font-size: 0.40rem;
+    font-size: 1rem;
     font-weight: 200;
-    
+    line-height: 0.5rem;
 }
 
 .foot {
