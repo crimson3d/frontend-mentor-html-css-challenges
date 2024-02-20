@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 9.9rem 9.9rem;
+    grid-template-rows: 6.8rem 8.1rem;
+    grid-template-areas: "top top"
+                         "left right";
+    font-family: "Karla", sans-serif;
+}
+
+.card__top {
+    grid-area: top;
+    padding: 1.2rem 1rem 1.4rem 1.29rem;
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+}
+
+.top__title {
+    color: hsl(179, 62%, 43%);
+    font-size: 0.7rem;
+    margin-bottom: 0.85rem;
+    font-weight: 400;
+}
+
+.top__subtitle {
+    color: hsl(71, 73%, 54%);
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+
+.top__text {
+    color: hsl(218, 22%, 67%);
+    font-size: 0.45rem;
+    font-weight: 400;
+    line-height: 0.8rem;
+}
+
+.card__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    grid-area: left;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 1.25rem 1rem 1rem 1.25rem;
+    border-radius: 0 0 0 5px;
+   
+}
+
+.left__title {
+    font-size: 0.55rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.left__price {
+    font-size: 1.1rem;
+    margin-bottom: 0.22rem;
+}
+
+.left__month {
+    font-size: 0.5rem;
+    font-weight: 200;
+    position: relative;
+    bottom: 3px;
+}
+
+.left__text {
+    font-size: 0.45rem;
+    margin-bottom: 1rem;
+}
+
+.left__button {
+    color: white;
+    font-size: 0.45rem;
+    border: none;
+    border-radius: 4px;
+    background-color: hsl(71, 73%, 54%);
+    height: 1.5rem;
+    max-width: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.126);
+}
+
+.card__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: right;
+    background-color: hsl(179, 48%, 61%);
+    color: white;
+    padding: 1.2rem 1.3rem;
+    border-radius: 0 0 5px 0;
+}
+
+.right__title {
+    font-size: 0.55rem;
+    margin-bottom: 0.5rem;
+}
+
+.right__text {
+    font-size: 0.40rem;
+    font-weight: 200;
+    
+}
+
+.foot {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__left {
+        border-radius: 0;
+    }
+
+    .card__right {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .right__text {
+        font-size: 0.50rem;
+    }
+}
