@@ -62,7 +62,6 @@ body {
     color: white;
     padding: 2.6rem 1rem 1rem 2.7rem;
     border-radius: 0 0 0 5px;
-   
 }
 
 .left__title {
@@ -126,21 +125,43 @@ body {
     bottom: 0;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 540px) {
     .card {
         display: flex;
         flex-direction: column;
+        max-width: 19.4rem;
+        margin: 0 20px;
+    }
+
+    .card__top {
+        padding: 1.6rem;
+    }
+
+    .top__title {
+        font-size: 1.2rem;
+    }
+
+    .top__text {
+        font-size: 0.8rem;
+        line-height: 1.8rem;
     }
 
     .card__left {
         border-radius: 0;
+        padding: 1.4rem 1rem 1rem 1.4rem;
+    }
+
+    .left__button {
+        max-width: 96%;
     }
 
     .card__right {
         border-radius: 0 0 5px 5px;
+        padding: 2.4rem 1rem 1rem 1.4rem;
     }
 
     .right__text {
-        font-size: 0.50rem;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
     }
 }
