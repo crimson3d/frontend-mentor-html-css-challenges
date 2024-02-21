@@ -22,7 +22,7 @@ body {
 .logo {
     display: flex;
     justify-content: flex-start;
-    width: 81rem;
+    width: 80%;
     height: 8.5rem;
 }
 
@@ -89,7 +89,7 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
-    width: 81rem;
+    width: 80%;
 }
 
 .icons__link {
