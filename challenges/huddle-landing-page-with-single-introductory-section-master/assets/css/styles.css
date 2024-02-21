@@ -36,7 +36,11 @@ body {
     margin-right: -3.2rem;
 }
 
-.intro__img {
+/* .intro__box {
+    display: flex;
+} */
+
+.box__img {
     width: 100%;
     height: auto;
 }
@@ -67,7 +71,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
-    width: 38%;
+    max-width: 38%;
     height: 3.5rem;
     border-radius: 30px;
     background-color: white;
