@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/frontend-mentor-html-css-challenges/challenges/fylo-data-storage-component-master/assets/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+    background-color: hsl(229, 57%, 11%);
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    padding: 15px 20px 25px;
+}
+
+.userData {
+    display: flex;
+    gap: 1.9rem;
+    align-items: end;
+}
+
+.userData__imgs {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 22rem;
+    height: 12.5rem;
+    border-radius: 10px 100px 10px 10px;
+}
+
+.imgs__logo {
+    max-width: 9rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.imgs__icons {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.icons__container {
+    display: flex;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.userData__data {
+    background-color: hsl(228, 56%, 26%);
+    width: 33.8rem;
+    height: 9.5rem;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    padding: 2.45rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.data__storageBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    height: 1.2rem;
+    border-radius: 10px;
+    margin: 1rem 0 0.5rem;
+}
+
+.storageBarContainer__content {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 75%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.content__circle {
+    background-color: white;
+    border-radius: 100%;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.1rem;
+}
+
+.data__numbers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.bubble__amount {
+    background-color: white;
+    width: 11.1rem;
+    height: 4.5rem;
+    border-radius: 10px 10px 0 10px;
+    position: absolute;
+    top: -3rem;
+    right: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(229, 7%, 55%);
+}
+
+
+
+.bubble__amount::before {
+    content: "";
+    /* display: block; */
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin: 5.5rem 0 0 10.03rem;
+    border-top: 22px solid white;
+    border-left: 18px solid transparent;
+}
+
+.bubble__amount--figure {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(229, 57%, 11%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-image: url(/frontend-mentor-html-css-challenges/challenges/fylo-data-storage-component-master/assets/images/bg-mobile.png);
+    }
+    .userData {
+        flex-direction: column;
+        align-items: center;
+        width: 50rem;
+    }
+
+    .userData__imgs {
+        width: 100%;
+    }
+
+    .userData__data {
+        width: 100%;
+    }
+}

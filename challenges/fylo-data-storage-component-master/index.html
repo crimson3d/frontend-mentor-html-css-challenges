@@ -13,16 +13,43 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
+  <div class="userData">
+    <div class="userData__imgs">
+      <img src="assets/images/logo.svg" alt="fylo_logo" class="imgs__logo" />
+      <div class="imgs__icons">
+        <div class="icons__container">
+          <img src="assets/images/icon-document.svg" alt="icons-document" class="container__document" />
+        </div>
+        <div class="icons__container">
+          <img src="assets/images/icon-folder.svg" alt="icon-folder" class="container__folder" />
+        </div>
+        <div class="icons__container">
+          <img src="assets/images/icon-upload.svg" alt="icon-upload" class="container__upload" />
+        </div>
+      </div>
+    </div>
+    <div class="userData__data">
+      <p class="data__message">You’ve used <span class="data__message--amount">815 GB</span> of your storage</p>
+      <div class="data__storageBarContainer">
+        <div class="storageBarContainer__content">
+          <div class="content__circle"></div>
+        </div>
+      </div>
+      <div class="data__bubble">
+        <p class="bubble__amount"><span class="bubble__amount--figure">185</span> GB Left</p>
+      </div>
+      <div class="data__numbers">
+        <p class="numbers__initial">0 GB</p>
+        <p class="numbers__final">1000 GB</p>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
