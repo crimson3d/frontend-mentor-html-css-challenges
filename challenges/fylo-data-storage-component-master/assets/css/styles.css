@@ -131,7 +131,7 @@ body {
     width: 0;
     height: 0;
     position: absolute;
-    margin: 5.5rem 0 0 10.03rem;
+    margin: 5.5rem 0 0 9.98rem;
     border-top: 22px solid white;
     border-left: 18px solid transparent;
 }
@@ -151,17 +151,48 @@ body {
     body {
         background-image: url(/frontend-mentor-html-css-challenges/challenges/fylo-data-storage-component-master/assets/images/bg-mobile.png);
     }
+
     .userData {
         flex-direction: column;
         align-items: center;
-        width: 50rem;
     }
 
     .userData__imgs {
-        width: 100%;
+        width: 30rem;
     }
 
     .userData__data {
-        width: 100%;
+        width: 30rem;
+    }
+
+    .bubble__amount {
+        top: 7.5rem;
+        right: 10rem;
+        border-radius: 10px;
+    }
+
+    .bubble__amount::before {
+        content: "";
+        /* display: block; */
+        width: 0;
+        height: 0;
+        position: absolute;
+        margin: 5.5rem 0 0 10.03rem;
+        border-top: 0;
+        border-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .userData__imgs {
+        width: 20rem;
+    }
+
+    .userData__data {
+        width: 20rem;
+    }
+
+    .bubble__amount {
+        right: 5rem;
     }
 }
