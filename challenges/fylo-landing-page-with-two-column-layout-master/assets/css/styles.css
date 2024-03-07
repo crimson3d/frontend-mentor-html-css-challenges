@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 4rem;
+    color: hsl(238, 22%, 44%);
+}
+
+.img__responsive {
+    width: 100%;
+    height: auto;
+}
+
+.bodyContainer__firstSection {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 20rem;
+}
+
+.firstSection__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top__menu {
+    display: flex;
+    gap: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.firstSection__content {
+    display: flex;
+    align-items: center;
+}
+
+.content__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.left__title {
+    font-family: "Raleway", sans-serif;
+    color: hsl(243, 87%, 12%);
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+}
+
+.left__text {
+    max-width: 36rem;
+    font-size: 1.15rem;
+}
+
+.left__form {
+    /* display: flex;
+    gap: 1rem; */
+    margin-top: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.form__action {
+    display: flex;
+    gap: 1rem;
+}
+
+.action__input {
+    font-size: 0.9rem;
+    padding-left: 1.3rem;
+    height: 2.8rem;
+    width: 51%;
+}
+
+.form__button {
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    width: 32%;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: hsla(224, 93%, 58%, 0.7);
+}
+
+.bodyContainer__secondSection {
+    width: 89%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.bodyContainer__background {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/frontend-mentor-html-css-challenges/challenges/fylo-landing-page-with-two-column-layout-master/assets/images/bg-curve-desktop.svg);
+    background-size: 4500px 780px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.acontent__pic {
+    max-width: 1rem;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.avatar__pic {
+    max-width: 2rem;
+    border-radius: 100%;
+}
+
+.secondSection__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.65rem;
+    padding-bottom: 3rem;
+    flex-basis: 90%;
+}
+
+.left__card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 22.3rem;
+    height: 13.5rem;
+    padding: 1.3rem 2rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card__text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 15px;
+}
+
+.anchor__acontent {
+    display: flex;
+    align-items: center;
+    color: hsl(170, 45%, 43%);
+}
+
+.thirdSection__content {
+    display: flex;
+    padding: 6.8rem 5rem 2.5rem;
+    background-color: hsl(238, 22%, 44%);
+    gap: 21.5rem;
+    width: 100%;
+}
+
+.content__left--variation2 {
+    color: white;
+    flex-basis: 80%;
+}
+
+.left--variation2--title {
+    font-size: 1.95rem;
+}
+
+.content__right--variation2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+}
+
+.right__form {
+    max-width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__right {
+    font-size: 0.9rem;
+    padding-left: 1.3rem;
+    height: 3.3rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.right__button {
+    width: 39%;
+    height: 3rem;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.right__button:hover {
+    background-color: hsla(224, 93%, 58%, 0.7);
+}
+
+.bodyContainer__bottom {
+    background-color: hsl(243, 87%, 12%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    padding: 7rem 5rem;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.bottom__column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.column__row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.column__row:hover {
+    color: hsl(238, 22%, 44%);
+}
+
+.row__icon {
+    max-width: 1.2rem;
+}
+
+.bottom__column--variation {
+    padding-top: 4.6rem;
+}
+
+@media only screen and (max-width: 1145px) {
+    .thirdSection__content {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .bodyContainer {
+        margin-top: 2rem;
+    }
+
+    .top__logo {
+        max-width: 6rem;
+    }
+
+    .top__menu {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .firstSection__content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .form__action {
+        align-items: center;
+        flex-direction: column;
+        height: 10rem;
+    }
+
+    .action__input {
+        width: 90%;
+    }
+
+    .form__button {
+        height: 3rem;
+        width: 90%;
+    }
+
+    .bodyContainer__firstSection {
+        margin-bottom: 2rem;
+    }
+
+    .bodyContainer__background {
+        background-image: url(/frontend-mentor-html-css-challenges/challenges/fylo-landing-page-with-two-column-layout-master/assets/images/bg-curve-mobile.svg);
+        background-size: 1800px 1150px;
+    }
+
+    .bodyContainer__secondSection {
+        flex-direction: column-reverse;
+    }
+
+    .secondSection__left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .left__card {
+        text-align: left;
+    }
+
+    .thirdSection__content {
+        flex-direction: column;
+        padding: 2rem 2rem 2rem;
+        text-align: center;
+        gap: 0rem;
+    }
+
+    .right__button {
+        width: 100%;
+    }
+
+    .right__form {
+        width: 90%;
+    }
+
+    .content__right--variation2 {
+        align-items: center;
+    }
+
+    .bodyContainer__bottom {
+        flex-direction: column;
+        padding: 4rem 3rem;
+    }
+
+    .column__logo {
+        max-width: 15rem;
+    }
+
+    .bottom__column {
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bodyContainer">
+  <div class="bodyContainer__background">
+    <section class="bodyContainer__firstSection">
+      <div class="firstSection__top">
+        <div class="top__logo">
+          <img src="assets/images/logo.svg" alt="fylo logo" class="logo__fylo img__responsive" />
+        </div>
+        <div class="top__menu">
+          <h5 class="menu__element">Features</h5>
+          <h5 class="menu__element">Team</h5>
+          <h5 class="menu__element">Sign In</h5>
+        </div>
+      </div>
+
+      <div class="firstSection__content">
+        <div class="content__left">
+          <h1 class="left__title">All your files in one secure location, accessible anywhere.</h1>
+
+          <p class="left__text">Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.</p>
+          <div class="left__form">
+            <form action="my_server" method="get" autocomplete="off" class="form__action">
+              <input type="email" name="email" id="email" placeholder="Enter your email..." class="action__input" />
+              <input type="submit" value="Get Started" class="form__button" />
+            </form>
+          </div>
+        </div>
+        <div class="content__right">
+          <img src="assets/images/illustration-1.svg" alt="people getting mail ilustration"
+            class="right__pic img__responsive" />
+        </div>
+      </div>
+    </section>
+    <section class="bodyContainer__secondSection">
+      <div class="secondSection__left">
+        <h2 class="left__title">Stay productive, wherever you are</h2>
+
+        <p class="left__text">Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+
+        <p class="left__text">Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!</p>
+        <div class="left__anchor">
+          <a href="#" class="anchor__acontent">
+            <p class="acontent__text">See how Fylo works</p>
+            <img src="assets/images/icon-arrow.svg" alt="icon-arrow" class="acontent__pic img__responsive" />
+          </a>
+        </div>
+        <div class="left__card">
+          <div class="card__icon">
+            <img src="assets/images/icon-quotes.svg" alt="quote icon">
+          </div>
+          <p class="card__text">Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.</p>
+
+          <div class="card__author">
+            <div class="author__avatar">
+              <img src="assets/images/avatar-testimonial.jpg" alt="kyle burton" class="avatar__pic img__responsive" />
+            </div>
+            <div class="author__data">
+              <h5 class="data__name">Kyle Burton</h5>
+              <h6 class="data__post">Founder & CEO, Huddle</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__right">
+        <img src="assets/images/illustration-2.svg" alt="people comunication ilustration"
+          class="right__pic img__responsive" />
+      </div>
+    </section>
+  </div>
+  <section class="thirdSection__content">
+    <div class="content__left content__left--variation2">
+      <h2 class="left--variation2--title">Get early access today</h2>
+
+      <p class="left--variation2--text">It only takes a minute to sign up and our free starter tier is extremely
+        generous.
+        If you have any questions, our support team would be happy to help you.</p>
+    </div>
+    <div class="content__right content__right--variation2">
+      <form action="my_server" method="get" autocomplete="off" class="right__form">
+        <input type="email" name="email" id="email" placeholder="email@example.com" class="form__right">
+        <input type="submit" value="Get Started For Free" class="right__button" />
+      </form>
+
+    </div>
+  </section>
+  <section class="bodyContainer__bottom">
+    <div class="bottom__column">
+      <div class="column__logo">
+        <img src="assets/images/logo.svg" alt="Fylo logo" class="logo__pic logo__pic--variation img__responsive" />
+      </div>
+      <div class="column__row">
+        <div class="row__icon">
+          <img src="assets/images/icon-phone.svg" alt="Phone Icon" class="icon__pic img__responsive" />
+        </div>
+        <h5 class="row__text">Phone: +1-543-123-4567</h5>
+      </div>
+      <div class="column__row">
+        <div class="row__icon">
+          <img src="assets/images/icon-email.svg" alt="Mail Icon img__responsive" class="icon__pic img__responsive" />
+        </div>
+        <h5 class="row__text">example@fylo.com</h5>
+      </div>
+    </div>
+    <div class="bottom__column bottom__column--variation">
+      <h5 class="column__row">About Us</h5>
+      <h5 class="column__row">Jobs</h5>
+      <h5 class="column__row">Press</h5>
+      <h5 class="column__row">Blog</h5>
+    </div>
+    <div class="bottom__column bottom__column--variation">
+      <h5 class="column__row">Contact Us</h5>
+      <h5 class="column__row">Terms</h5>
+      <h5 class="column__row">Privacy</h5>
+    </div>
+    <div class="bottom__column bottom__column--variation">
+      <div class="column__row">
+        <div class="row__icon">
+          <img src="assets/images/icon-facebook.svg" alt="Facebook" class="icon__pic img__responsive" />
+        </div>
+        <div class="row__icon">
+          <img src="assets/images/icon-twitter.svg" alt="Twitter" class="icon__pic img__responsive" />
+        </div>
+        <div class="row__icon">
+          <img src="assets/images/icon-instagram.svg" alt="Instagram" class="icon__pic img__responsive" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
