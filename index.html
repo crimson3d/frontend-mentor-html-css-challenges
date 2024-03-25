@@ -5,154 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta proterty="og:image" content="./assets/media/vista_previa.jpg">
     <title>Frontendmentor Challenges</title>
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="https://kit.fontawesome.com/95d4bbeacc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Angkor&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Frontendmentor Challenges</h1>
-    <div class="container">
-        <div class="card">
-            <h2>Práctica 1</h2>
-            <img src="challenges/qr-code-component/design/desktop-preview.jpg" alt="Preview_Práctica1">
-            <a href="challenges/qr-code-component/index.html" target="_blank"><strong>QR Code Component</strong></a>
-            <p>Tarjetita con código QR y dos pequeños párrafos centrados en ella, usando HTML5 y CSS3 flexbox.</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/qr-code-component">Ver el código</a>
+<body class="bodyContainer">
+    <header class="bodyContainer__menu" id="navbar">
+        <ul class="menu__nav">
+            <li class="nav__element"><a href="#welcome-section">About</a></li>
+            <li class="nav__element"><a href="#projects">Work</a></li>
+            <li class="nav__element"><a href="#footer">Contact</a></li>
+        </ul>
+    </header>
+    <section id="welcome-section" class="bodyContainer__welcome">
+        <h1 class="welcome__title">Hi! I am Jose</h1>
+        <h2 class="welcome__subtitle"><span class="subtitle__variation">{almost}</span>a web developer</h2>
+        <p class="welcome__text">Welcome to my portfolio, I am a web development padawan who also enjoys video games, horror movies and doom metal.</p>
+    </section>
+    <section class="bodyContainer__projects" id="projects">
+        <h2 class="projects__title">Take a look at my works</h2>
+        <div class="projects__project project-tile">
+            <div class="project__card">
+                <h3 class="project__title">practice 1</h3>
+                <img src="challenges/qr-code-component/design/desktop-preview.jpg" alt="Preview_practice1">
+                <a href="challenges/qr-code-component/index.html" target="_blank"><strong>QR Code Component</strong></a>
+                <p>Tarjetita con código QR y dos pequeños parrafos centrados en ella, usando HTML5 y CSS3 flexbox.</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/qr-code-component">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 2</h3>
+                <img src="challenges/recipe-page-main/design/desktop-preview.jpg" alt="Preview_practice2">
+                <a href="challenges/recipe-page-main/index.html" target="_blank"><strong>Omelette Recipe</strong></a>
+                <p>Tarjeta con receta, incluye listas y tabla, usando HTML5 y CSS3 flexbox</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/recipe-page-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 3</h3>
+                <img src="challenges/social-links-profile-main/design/desktop-preview.jpg" alt="Preview_practice3">
+                <a href="challenges/social-links-profile-main/index.html" target="_blank"><strong>Social Links Profile</strong></a>
+                <p>Tarjeta con enlaces a distintas redes sociales usando HTML5 y CSS3 flexbox</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/social-links-profile-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 4</h3>
+                <img src="challenges/blog-preview-card-main/design/desktop-preview.jpg" alt="Preview_practice4">
+                <a href="challenges/blog-preview-card-main/index.html" target="_blank"><strong>Blog Preview Card</strong></a>
+                <p>Tarjeta preview de entrada en blog usando HTML5 y CSS3 flexbox</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/blog-preview-card-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 5</h3>
+                <img src="challenges/results-summary-component-main/design/desktop-preview.jpg" alt="Preview_practice5">
+                <a href="challenges/results-summary-component-main/index.html" target="_blank"><strong>Results Summary</strong></a>
+                <p>Sumario de resultados usando HTML5 y CSS3 flexbox y media query para adaptar el diseño a movil</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/results-summary-component-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 6</h3>
+                <img src="challenges/product-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_practice6">
+                <a href="challenges/product-preview-card-component-main/index.html" target="_blank"><strong>Product Preview</strong></a>
+                <p>Previsualización de producto usando HTML5 y CSS3 flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/product-preview-card-component-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 7</h3>
+                <img src="challenges/nft-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_practice7">
+                <a href="challenges/nft-preview-card-component-main/index.html" target="_blank"><strong>NFT Card</strong></a>
+                <p>Previsualización de NFT usando HTML5 y CSS3 flexbox</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/nft-preview-card-component-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 8</h3>
+                <img src="challenges/order-summary-component-main/design/desktop-preview.jpg" alt="Preview_practice8">
+                <a href="challenges/order-summary-component-main/index.html" target="_blank"><strong>Order Summary</strong></a>
+                <p>Resumen de pedido usando HTML5 y CSS3 flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/order-summary-component-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 9</h3>
+                <img src="challenges/stats-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_practice9">
+                <a href="challenges/stats-preview-card-component-main/index.html" target="_blank"><strong>Stats Preview Card</strong></a>
+                <p>Previsualización de estadísticas usando HTML5 y CSS3 flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/stats-preview-card-component-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 10</h3>
+                <img src="challenges/3-column-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_practice10">
+                <a href="challenges/3-column-preview-card-component-main/index.html" target="_blank"><strong>3 Columns Preview Card</strong></a>
+                <p>Previsualización en tres columnas usando HTML5 y CSS3 flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/3-column-preview-card-component-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 11</h3>
+                <img src="challenges/profile-card-component-main/assets/design/desktop-preview.jpg" alt="Preview_practice11">
+                <a href="challenges/profile-card-component-main/index.html" target="_blank"><strong>Profile Card Component</strong></a>
+                <p>Previsualización de perfil de usuario en HTML5 y CSS3 flexbox</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/profile-card-component-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 12</h3>
+                <img src="challenges/social-proof-section-master/design/desktop-preview.jpg" alt="Preview_practice12">
+                <a href="challenges/social-proof-section-master/index.html" target="_blank"><strong>Social Proof Section</strong></a>
+                <p>Previsualización de valoraciones de usuarios en HTML5 y CSS3 Grid, Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/social-proof-section-master">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 13</h3>
+                <img src="challenges/four-card-feature-section-master/assets/design/desktop-preview.jpg" alt="Preview_practice13">
+                <a href="challenges/four-card-feature-section-master/index.html" target="_blank"><strong>Four Cards Section</strong></a>
+                <p>Vista de cuatro tarjetas en HTML5 y CSS3 Grid, Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/four-card-feature-section-master">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 14</h3>
+                <img src="challenges/single-price-grid-component-master/assets/design/desktop-preview.jpg" alt="Preview_practice14">
+                <a href="challenges/single-price-grid-component-master/index.html" target="_blank"><strong>Single Price Grid Component</strong></a>
+                <p>Vista previa de precio en HTML5 y CSS3 Grid, Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/single-price-grid-component-master">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 15</h3>
+                <img src="challenges/huddle-landing-page-with-single-introductory-section-master/assets/design/desktop-preview.jpg" alt="Preview_practice15">
+                <a href="challenges/huddle-landing-page-with-single-introductory-section-master/index.html" target="_blank"><strong>Huddle Landing Page</strong></a>
+                <p>Landing Page en HTML5 y CSS3 Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/huddle-landing-page-with-single-introductory-section-master">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 16</h3>
+                <img src="challenges/testimonials-grid-section-main/assets/design/desktop-preview.jpg" alt="Preview_practice16">
+                <a href="challenges/testimonials-grid-section-main/index.html" target="_blank"><strong>Testimonials Grid Section</strong></a>
+                <p>Testimonials Section en HTML5 y CSS3 Grid, Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/testimonials-grid-section-main">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 17</h3>
+                <img src="challenges/fylo-data-storage-component-master/assets/design/desktop-preview.jpg" alt="Preview_practice17">
+                <a href="challenges/fylo-data-storage-component-master/index.html" target="_blank"><strong>Fylo Data Storage</strong></a>
+                <p>Filo Data Storage en HTML5 y CSS3 Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/fylo-data-storage-component-master">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 18</h3>
+                <img src="challenges/clipboard-landing-page-master/assets/design/desktop-preview.jpg" alt="Preview_practice18">
+                <a href="challenges/clipboard-landing-page-master/index.html" target="_blank"><strong>Clipboard Landing Page</strong></a>
+                <p>Clipboard Landing Page en HTML5 y CSS3 Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/clipboard-landing-page-master">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 19</h3>
+                <img src="challenges/huddle-landing-page-with-alternating-feature-blocks-master/assets/design/desktop-preview.jpg" alt="Preview_practice19">
+                <a href="challenges/huddle-landing-page-with-alternating-feature-blocks-master/index.html" target="_blank"><strong>Huddle Landing Page</strong></a>
+                <p>Huddle Landing Page en HTML5 y CSS3 Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/huddle-landing-page-with-alternating-feature-blocks-master">Whatch the code</a>
+            </div>
+            <div class="project__card">
+                <h3 class="project__title">practice 20</h3>
+                <img src="challenges/fylo-landing-page-with-two-column-layout-master/assets/design/desktop-preview.jpg" alt="Preview_practice20">
+                <a href="challenges/fylo-landing-page-with-two-column-layout-master/index.html" target="_blank"><strong>Fylo Landing Page</strong></a>
+                <p>Fylo Landing Page en HTML5 y CSS3 Flexbox y media query</p>
+                <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/fylo-landing-page-with-two-column-layout-master">Whatch the code</a>
+            </div>
         </div>
-        <div class="card">
-            <h2>Práctica 2</h2>
-            <img src="challenges/recipe-page-main/design/desktop-preview.jpg" alt="Preview_Práctica2">
-            <a href="challenges/recipe-page-main/index.html" target="_blank"><strong>Omelette Recipe</strong></a>
-            <p>Tarjeta con receta, incluye listas y tabla, usando HTML5 y CSS3 flexbox</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/recipe-page-main">Ver el código</a>
+    </section>
+    <section class="bodyContainer__footer" id="footer">
+        <h2 class="footer__title">Let´s work together...</h2>
+        <h3 class="footer__subtitle">How do you take your coffee?</h3>
+        <div class="footer__social">
+            <div class="social__link">
+                <a href="https://github.com/crimson3d" id="profile-link" target="_blank">
+                    <i class="fa-brands fa-github fa-xl" style="color: #d00000;"></i>
+                    <h4>Github</h4>
+                </a>
+            </div>
+            <div class="social__link">
+                <a href="https://www.frontendmentor.io/profile/crimson3d" target="_blank">
+                    <i class="fa-solid fa-code fa-xl" style="color: #d00000;"></i>
+                    <h4>Frontendmentor</h4>
+                </a>
+            </div>
+            <div class="social__link">
+                <a href="mailto:crimson3d@gmail.com" target="_blank">
+                    <i class="fa-regular fa-envelope fa-xl" style="color: #d00000;"></i>
+                    <h4>Mail me</h4>
+                </a>
+            </div>
         </div>
-        <div class="card">
-            <h2>Práctica 3</h2>
-            <img src="challenges/social-links-profile-main/design/desktop-preview.jpg" alt="Preview_Práctica3">
-            <a href="challenges/social-links-profile-main/index.html" target="_blank"><strong>Social Links Profile</strong></a>
-            <p>Tarjeta con enlaces a distintas redes sociales usando HTML5 y CSS3 flexbox</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/social-links-profile-main">Ver el código</a>
+        <hr class="bodyContainer__divisor" />
+        <div class="footer__bottom">
+            <h5>created as a final project for the certification in responsive html and css in freeCodeCamp on March 25, 2024</h5>
         </div>
-        <div class="card">
-            <h2>Práctica 4</h2>
-            <img src="challenges/blog-preview-card-main/design/desktop-preview.jpg" alt="Preview_Práctica4">
-            <a href="challenges/blog-preview-card-main/index.html" target="_blank"><strong>Blog Preview Card</strong></a>
-            <p>Tarjeta preview de entrada en blog usando HTML5 y CSS3 flexbox</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/blog-preview-card-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 5</h2>
-            <img src="challenges/results-summary-component-main/design/desktop-preview.jpg" alt="Preview_Práctica5">
-            <a href="challenges/results-summary-component-main/index.html" target="_blank"><strong>Results Summary</strong></a>
-            <p>Sumario de resultados usando HTML5 y CSS3 flexbox y media query para adaptar el diseño a movil</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/results-summary-component-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 6</h2>
-            <img src="challenges/product-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_Práctica6">
-            <a href="challenges/product-preview-card-component-main/index.html" target="_blank"><strong>Product Preview</strong></a>
-            <p>Previsualización de producto usando HTML5 y CSS3 flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/product-preview-card-component-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 7</h2>
-            <img src="challenges/nft-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_Práctica7">
-            <a href="challenges/nft-preview-card-component-main/index.html" target="_blank"><strong>NFT Card</strong></a>
-            <p>Previsualización de NFT usando HTML5 y CSS3 flexbox</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/nft-preview-card-component-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 8</h2>
-            <img src="challenges/order-summary-component-main/design/desktop-preview.jpg" alt="Preview_Práctica8">
-            <a href="challenges/order-summary-component-main/index.html" target="_blank"><strong>Order Summary</strong></a>
-            <p>Resumen de pedido usando HTML5 y CSS3 flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/order-summary-component-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 9</h2>
-            <img src="challenges/stats-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_Práctica9">
-            <a href="challenges/stats-preview-card-component-main/index.html" target="_blank"><strong>Stats Preview Card</strong></a>
-            <p>Previsualización de estadísticas usando HTML5 y CSS3 flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/stats-preview-card-component-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 10</h2>
-            <img src="challenges/3-column-preview-card-component-main/design/desktop-preview.jpg" alt="Preview_Práctica10">
-            <a href="challenges/3-column-preview-card-component-main/index.html" target="_blank"><strong>3 Columns Preview Card</strong></a>
-            <p>Previsualización en tres columnas usando HTML5 y CSS3 flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/3-column-preview-card-component-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 11</h2>
-            <img src="challenges/profile-card-component-main/assets/design/desktop-preview.jpg" alt="Preview_Práctica11">
-            <a href="challenges/profile-card-component-main/index.html" target="_blank"><strong>Profile Card Component</strong></a>
-            <p>Previsualización de perfil de usuario en HTML5 y CSS3 flexbox</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/profile-card-component-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 12</h2>
-            <img src="challenges/social-proof-section-master/design/desktop-preview.jpg" alt="Preview_Práctica12">
-            <a href="challenges/social-proof-section-master/index.html" target="_blank"><strong>Social Proof Section</strong></a>
-            <p>Previsualización de valoraciones de usuarios en HTML5 y CSS3 Grid, Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/social-proof-section-master">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 13</h2>
-            <img src="challenges/four-card-feature-section-master/assets/design/desktop-preview.jpg" alt="Preview_Práctica13">
-            <a href="challenges/four-card-feature-section-master/index.html" target="_blank"><strong>Four Cards Section</strong></a>
-            <p>Vista de cuatro tarjetas en HTML5 y CSS3 Grid, Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/four-card-feature-section-master">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 14</h2>
-            <img src="challenges/single-price-grid-component-master/assets/design/desktop-preview.jpg" alt="Preview_Práctica14">
-            <a href="challenges/single-price-grid-component-master/index.html" target="_blank"><strong>Single Price Grid Component</strong></a>
-            <p>Vista previa de precio en HTML5 y CSS3 Grid, Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/single-price-grid-component-master">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 15</h2>
-            <img src="challenges/huddle-landing-page-with-single-introductory-section-master/assets/design/desktop-preview.jpg" alt="Preview_Práctica15">
-            <a href="challenges/huddle-landing-page-with-single-introductory-section-master/index.html" target="_blank"><strong>Huddle Landing Page</strong></a>
-            <p>Landing Page en HTML5 y CSS3 Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/huddle-landing-page-with-single-introductory-section-master">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 16</h2>
-            <img src="challenges/testimonials-grid-section-main/assets/design/desktop-preview.jpg" alt="Preview_Práctica16">
-            <a href="challenges/testimonials-grid-section-main/index.html" target="_blank"><strong>Testimonials Grid Section</strong></a>
-            <p>Testimonials Section en HTML5 y CSS3 Grid, Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/testimonials-grid-section-main">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 17</h2>
-            <img src="challenges/fylo-data-storage-component-master/assets/design/desktop-preview.jpg" alt="Preview_Práctica17">
-            <a href="challenges/fylo-data-storage-component-master/index.html" target="_blank"><strong>Fylo Data Storage</strong></a>
-            <p>Filo Data Storage en HTML5 y CSS3 Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/fylo-data-storage-component-master">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 18</h2>
-            <img src="challenges/clipboard-landing-page-master/assets/design/desktop-preview.jpg" alt="Preview_Práctica18">
-            <a href="challenges/clipboard-landing-page-master/index.html" target="_blank"><strong>Clipboard Landing Page</strong></a>
-            <p>Clipboard Landing Page en HTML5 y CSS3 Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/clipboard-landing-page-master">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 19</h2>
-            <img src="challenges/huddle-landing-page-with-alternating-feature-blocks-master/assets/design/desktop-preview.jpg" alt="Preview_Práctica19">
-            <a href="challenges/huddle-landing-page-with-alternating-feature-blocks-master/index.html" target="_blank"><strong>Huddle Landing Page</strong></a>
-            <p>Huddle Landing Page en HTML5 y CSS3 Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/huddle-landing-page-with-alternating-feature-blocks-master">Ver el código</a>
-        </div>
-        <div class="card">
-            <h2>Práctica 20</h2>
-            <img src="challenges/fylo-landing-page-with-two-column-layout-master/assets/design/desktop-preview.jpg" alt="Preview_Práctica20">
-            <a href="challenges/fylo-landing-page-with-two-column-layout-master/index.html" target="_blank"><strong>Fylo Landing Page</strong></a>
-            <p>Fylo Landing Page en HTML5 y CSS3 Flexbox y media query</p>
-            <a href="https://github.com/crimson3d/frontend-mentor-html-css-challenges/tree/main/challenges/fylo-landing-page-with-two-column-layout-master">Ver el código</a>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
