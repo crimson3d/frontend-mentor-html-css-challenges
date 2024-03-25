@@ -95,6 +95,7 @@ TITULOS: font-family: "Angkor", serif; */
     font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     max-width: 30rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .subtitle__variation {
