@@ -104,6 +104,10 @@ TITULOS: font-family: "Angkor", serif; */
    filter: blur(1px);
 }
 
+.bodyContainer__projects {
+    background-color: #ff6200;
+}
+
 
 .projects__project {
     display: grid;
@@ -111,7 +115,6 @@ TITULOS: font-family: "Angkor", serif; */
     gap: 2rem;
     /* max-width: 80%; */
     padding: 2rem 2rem 4rem 2rem;
-    background-color: #ff6200;
 }
 
 .projects__title{
@@ -119,7 +122,6 @@ TITULOS: font-family: "Angkor", serif; */
     font-family: "Angkor", serif;
     font-size: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
     padding: 2rem;
-    background-color: #ff6200;
     color: #ffffff;
 }
 
@@ -213,10 +215,6 @@ img {
     .footer__social {
         gap: 1rem;
     }
-
-
-
-   
 }
 
 @media only screen and (max-width: 490px) {
