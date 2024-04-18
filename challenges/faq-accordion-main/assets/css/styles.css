@@ -98,6 +98,11 @@ body {
     .container__card {
         font-size: 0.55rem;
     }
+    .container__content {
+        margin-bottom: 2rem;
+        padding: 0 2rem 0 0;
+        font-size: 0.9rem;
+    }
     .container__content--active {
         margin-bottom: 2rem;
         padding: 0 2rem 0 0;
