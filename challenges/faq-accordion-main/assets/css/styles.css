@@ -84,7 +84,7 @@ body {
 
 @media only screen and (max-width: 650px) {
     body {
-        background-image: url(/challenges/faq-accordion-main/assets/images/background-pattern-mobile.svg);
+        background-image: url(/frontend-mentor-html-css-challenges/challenges/faq-accordion-main/assets/images/background-pattern-mobile.svg);
     }
     .container {
         padding: 1.5rem 1rem;
