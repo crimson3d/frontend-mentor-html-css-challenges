@@ -23,6 +23,11 @@ boton.addEventListener("click", function() {
         spanDestino.innerHTML = finalSelectedScore;
         primeraTarjeta.style.display = "none";
         segundaTarjeta.style.display = "flex";
-    }
+    } else {
+        this.disabled = true;
+        setTimeout (() => {
+            this.disabled = false;
+        }, 1000);
+    };
 });
 
