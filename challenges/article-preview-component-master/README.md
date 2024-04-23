@@ -18,7 +18,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Screenshot
 
-![](..//interactive-rating-component-main/assets/)
+![](..//article-preview-component-master/design/Article-solution.png)
 
 ### Links
 
