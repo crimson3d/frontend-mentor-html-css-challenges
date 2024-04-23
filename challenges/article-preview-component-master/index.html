@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card__img"></div>
+    <div class="card__content">
+      <h1 class="content__title">Shift the overall look and feel by adding these wonderful 
+      touches to furniture in your home</h1>
+
+      <p class="content__text">Ever been in a room and felt like something was missing? Perhaps 
+      it felt slightly bare and uninviting. I’ve got some simple tips 
+      to help you make any room feel complete.</p>
+      <div class="content__bottom">
+        <div class="bottom__left">
+          <div class="left__pic">
+            <img src="images/avatar-michelle.jpg" alt="avatar-michelle" class="pic__avatar img__responsive" />
+          </div>
+          <div class="left__avatar">
+            <h2 class="avatar__name">Michelle Appleton</h2>
+            <h3 class="avatar__date">28 Jun 2020</h3>
+          </div>
+        </div>
+        <button class="bottom__button" id="socialButton">
+          <img src="images/icon-share.svg" alt="icon-share" class="button__pic img__responsive" />
+        </button>
+        <div class="bottom__modal bottom__modal--hidden" id="modalSocial">
+          <span>SHARE</span>
+          <div class="fb-share-button" 
+          data-href="https://crimson3d.github.io/frontend-mentor-html-css-challenges/index.html" 
+          data-layout="button">
+          </div>
+
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"><img src="images/icon-twitter.svg" alt=""></a>
+
+          <a href="https://www.pinterest.com/pin/create/button/?url=https://crimson3d.github.io/frontend-mentor-html-css-challenges/index.html&description=Primer%20post%20en%20Pinterest!" 
+          data-pin-do="buttonBookmark" data-pin-custom="true"><img src="images/icon-pinterest.svg" alt=""></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://crimson3d.github.io/frontend-mentor-html-css-challenges/index.html">José Antonio Sánchez</a>.
+  </div>
+  <script src="assets/js/app.js"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script
+    type="text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js"
+></script>
+</body>
+</html>

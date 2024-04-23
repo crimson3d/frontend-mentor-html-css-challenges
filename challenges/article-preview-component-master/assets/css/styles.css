@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 13px;
+}
+
+.card {
+    display: flex;
+    max-width: 46rem;
+    height: 17.5rem;
+    margin: 0 1rem;
+}
+
+.img__responsive {
+   max-width: 100%;
+   height: auto;
+}
+
+.card__img {
+    background-image: url(/challenges/article-preview-component-master/images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 39%;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 5px 5px 50px 0 hsl(212, 23%, 69%);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    flex-basis: 60%;
+    padding: 2rem 2.4rem 1.8rem;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 50px 0 hsl(212, 23%, 69%);
+}
+
+.content__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.content__text {
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 1rem;
+}
+
+.content__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.bottom__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left__pic {
+    max-width: 2.5rem;
+}
+
+.pic__avatar {
+    border-radius: 50%;
+}
+
+.left__avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.6rem;
+}
+
+.avatar__name {
+    color: hsl(217, 19%, 35%);
+    font-size: 0.8rem;
+}
+
+.avatar__date {
+    color: hsl(214, 17%, 51%);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.bottom__button {
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bottom__button:hover {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
+.bottom__modal {
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 20rem;
+    height: 3.6rem;
+    position: absolute;
+    top: -85px;
+    right: -145px;
+    border-radius: 10px;
+    letter-spacing: 0.3rem;
+    color: hsl(210, 46%, 95%);
+    box-shadow: 5px 5px 50px 0 hsl(212, 23%, 69%);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: translateY(50px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bottom__modal::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    top: 100%;
+}
+
+.bottom__modal--visible {
+    transform: translateY(0); 
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1px;
+}
+
+@media only screen and (max-width: 985px) {
+    .card {
+        flex-direction: column;
+        max-width: 46rem;
+        height: 35rem;
+    }
+
+    .card__img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card__content {
+        border-radius: 0 0 10px 10px;
+        padding: 0;
+    }
+
+    .content__title {
+        margin: 2rem 2.4rem 0 2.4rem;
+    }
+
+    .content__text {
+        margin: 0 2.4rem 0 2.4rem;
+    }
+    
+    .bottom__left {
+        margin: 0 0 1.8rem 2.4rem;
+    }
+
+    .bottom__button {
+        margin: 1rem 2.4rem 1.8rem 0;
+        z-index: 999;
+    }
+
+    .bottom__modal {
+        justify-content: start;
+        width: 100%;
+        height: 4.8rem;
+        top: 0px;
+        right: 0px;
+        border-radius: 0 0 10px 10px;
+        transform: translateY(0px);
+        padding-left: 2rem;
+    }
+
+    .bottom__modal::after {
+        border-top: 15px solid transparent;
+    }
+
+    .bottom__modal--visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+@media only screen and (max-width: 403px) {
+    .bottom__modal {
+        gap: 0.3rem;
+        padding-left: 0.5rem;
+        letter-spacing: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
