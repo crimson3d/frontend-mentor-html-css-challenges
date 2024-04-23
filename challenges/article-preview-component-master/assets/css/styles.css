@@ -28,7 +28,7 @@ body {
 }
 
 .card__img {
-    background-image: url(challenges/article-preview-component-master/images/drawers.jpg);
+    background-image: url(https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/article-preview-component-master/images/drawers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     flex-basis: 39%;
@@ -212,7 +212,6 @@ body {
     .bottom__modal {
         gap: 0.3rem;
         padding-left: 0.5rem;
-        letter-spacing: 0;
     }
 }
 
