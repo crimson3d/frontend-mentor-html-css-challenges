@@ -31,7 +31,7 @@ body {
     background-image: url(https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/article-preview-component-master/images/drawers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    flex-basis: 39%;
+    flex-basis: 40%;
     border-radius: 10px 0 0 10px;
     box-shadow: 5px 5px 50px 0 hsl(212, 23%, 69%);
 }
@@ -168,6 +168,8 @@ body {
     .card__content {
         border-radius: 0 0 10px 10px;
         padding: 0;
+        flex-basis: auto;
+        gap: 1.5rem;
     }
 
     .content__title {
@@ -175,7 +177,7 @@ body {
     }
 
     .content__text {
-        margin: 0 2.4rem 0 2.4rem;
+        margin: 0 2.4rem 1rem 2.4rem;
     }
     
     .bottom__left {
