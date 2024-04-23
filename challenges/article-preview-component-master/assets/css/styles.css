@@ -28,7 +28,7 @@ body {
 }
 
 .card__img {
-    background-image: url(../images/drawers.jpg);
+    background-image: url(images/drawers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     flex-basis: 39%;
