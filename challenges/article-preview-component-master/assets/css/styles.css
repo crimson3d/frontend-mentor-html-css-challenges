@@ -172,6 +172,14 @@ body {
         gap: 1.5rem;
     }
 
+    a {
+        color: #fff;
+    }
+
+    a svg {
+        fill: white;
+    }
+
     .content__title {
         margin: 2rem 2.4rem 0 2.4rem;
     }
