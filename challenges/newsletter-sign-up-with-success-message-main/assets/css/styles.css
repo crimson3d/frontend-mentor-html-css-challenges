@@ -43,7 +43,7 @@
 }
 
 .list__element {
-    background-image: url(/challenges/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
+    background-image: url(https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 40px;
