@@ -13,6 +13,7 @@
     height: 100vh;
     background-color: hsl(234, 29%, 20%);
     color: hsl(234, 29%, 20%);
+    font-size: 16px;
 }
 
 .main__signUp {
@@ -60,9 +61,14 @@
 }
 
 .form__label {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.label__error {
+    color: hsl(4, 100%, 67%);
 }
 
 .form__input {
@@ -74,7 +80,6 @@
     color: hsl(231, 7%, 60%);
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
-    cursor: pointer;
 }
 
 .form__button {
@@ -163,9 +168,6 @@
     .card__title {
         font-size: 2.8rem;
     }
-    .card__text {
-        font-size: 0.9rem;
-    }
     .card__list {
         font-size: 0.9rem;
     }
@@ -193,15 +195,8 @@
     .card__title {
         font-size: 2rem;
     }
-    .card__text {
-        font-size: 0.8rem;
-    }
     .card__list {
         font-size: 0.8rem;
-    }
-    .card__form {
-        height: 8rem;
-        
     }
    
 }
@@ -244,7 +239,7 @@
         padding-left: 40px;
     }
     .card__form {
-        height: 11rem;
+        height: 10rem;
         margin-top: 4rem;
     }
     .attribution {

@@ -32,7 +32,10 @@
         <li class="list__element">And much more!</li>
       </ul>
       <form action="" method="post" class="card__form" id="form">
-        <label for="email" class="form__label">Email address</label>
+        <div class="form__label">
+          <label for="email" class="label__name">Email address</label>
+          <div class="label__error" id="error"></div>
+        </div>
         <input type="email" id="email" name="email" required placeholder="email@company.com" class="form__input"/>
 
         <button type="submit" class="form__button" id="formButton">Subscribe to monthly newsletter</button>
