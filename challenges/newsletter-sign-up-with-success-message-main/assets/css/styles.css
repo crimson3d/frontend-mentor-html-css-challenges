@@ -1,253 +1,230 @@
+@import url(https://fonts.google.com/specimen/Roboto);
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.main {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(234, 29%, 20%);
-    color: hsl(234, 29%, 20%);
-    font-size: 16px;
+* .main {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(234, 29%, 20%);
+  font-size: 16px;
 }
 
 .main__signUp {
-    background-color: white;
-    display: flex;
-    padding: 1.5rem;
-    border-radius: 33px;
-    max-width: 58rem;
-    height: 40rem;
-    margin: 0 1rem;
+  background-color: white;
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 33px;
+  max-width: 58rem;
+  margin: 0 1rem;
 }
-
-.signUp__card {
-    padding: 4.5rem 4rem 4.5rem 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.main__signUp .signUp__card {
+  padding: 4.5rem 4rem 4.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.card__title {
-    font-size: 3.4rem;
-    font-weight: 700;
+.main__signUp .signUp__card .card__title {
+  font-size: 3.4rem;
+  font-weight: 700;
 }
-
-.card__list {
-    list-style-type: none;
-    padding: 0;
-    height: 7rem;
+.main__signUp .signUp__card .card__list {
+  list-style-type: none;
+  padding: 0;
 }
-
-.list__element {
-    background-image: url(https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-    margin-bottom: 10px;
-    line-height: 25px;
+.main__signUp .signUp__card .card__list .list__element {
+  background-image: url(https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  line-height: 25px;
 }
-
-.card__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 10rem;
+.main__signUp .signUp__card .card__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
-
-.form__label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    font-weight: 700;
+.main__signUp .signUp__card .card__form .form__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
-
-.label__error {
-    color: hsl(4, 100%, 67%);
+.main__signUp .signUp__card .card__form .form__label .label__error {
+  color: hsl(4, 100%, 67%);
 }
-
-.form__input {
-    width: 100%;
-    height: 3.6rem;
-    border-radius: 10px;
-    border: 0.2px solid hsl(231, 7%, 60%);
-    font-size: 1rem;
-    color: hsl(231, 7%, 60%);
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
+.main__signUp .signUp__card .card__form .form__input {
+  width: 100%;
+  border-radius: 10px;
+  border: 0.2px solid hsl(231, 7%, 60%);
+  font-size: 1rem;
+  color: hsl(231, 7%, 60%);
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
 }
-
-.form__button {
-    display: block;
-    background-color: hsl(234, 29%, 20%);
-    color: white;
-    width: 100%;
-    height: 3.6rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
+.main__signUp .signUp__card .card__form .form__button {
+  display: block;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
 }
-
-.form__button:hover {
-    background-image: linear-gradient(to right, hsl(4, 97%, 54%), hsl(4, 100%, 67%));
-    box-shadow: 5px 5px 5px 0 hsl(4, 100%, 67%);
+.main__signUp .signUp__card .card__form .form__button:hover {
+  background-image: linear-gradient(to right, hsl(4, 97%, 54%), hsl(4, 100%, 67%));
+  box-shadow: 5px 5px 5px 0 hsl(4, 100%, 67%);
 }
 
 .success__card {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 3rem 4rem 4rem 4rem;
-    border-radius: 33px;
-    max-width: 31.5rem;
-    max-height: 32.5rem;
-    margin: 0 1rem;
-    gap: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 4rem 4rem 4rem;
+  border-radius: 33px;
+  max-width: 31.5rem;
+  max-height: 32.5rem;
+  margin: 0 1rem;
+  gap: 2rem;
 }
-
-.card__text {
-    margin-bottom: 1rem;
+.success__card .card__text {
+  margin-bottom: 1rem;
 }
-
-.card__icon {
-    max-width: 3.5rem;
+.success__card .card__icon {
+  max-width: 3.5rem;
 }
-
-.card__button {
-    background-color: hsl(234, 29%, 20%);
-    color: white;
-    width: 100%;
-    height: 3.6rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
+.success__card .card__button {
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
 }
-
-.card__button:hover {
-    background-image: linear-gradient(to right, hsl(4, 97%, 54%), hsl(4, 100%, 67%));
-    box-shadow: 5px 5px 5px 0 hsl(4, 100%, 67%);
+.success__card .card__button:hover {
+  background-image: linear-gradient(to right, hsl(4, 97%, 54%), hsl(4, 100%, 67%));
+  box-shadow: 5px 5px 5px 0 hsl(4, 100%, 67%);
 }
 
 .attribution {
-    position: absolute;
-    bottom: 1px;
+  position: absolute;
+  bottom: 1px;
 }
 
 .img__pic--responsive {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .img__pic--mobile {
-    display: none;
+  display: none;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 941px) {
-    .main__signUp{
-        max-height: 33rem;
-        justify-content: space-between;
-    }
-    .img__pic {
-        max-height: 30rem;
-    }
-    .signUp__card {
-        padding: 1rem 1.5rem 2rem 1rem;
-    }
-    .card__title {
-        font-size: 2.8rem;
-    }
-    .card__list {
-        font-size: 0.9rem;
-    }
-    .list__element {
-        padding-left: 30px;
-    }
-    .success__card {
-        gap: 1rem;
-    }
+  .main__signUp {
+    max-height: 33rem;
+    justify-content: space-between;
+  }
+  .main__signUp .signUp__card {
+    padding: 1rem 1.5rem 2rem 1rem;
+  }
+  .main__signUp .signUp__card .card__title {
+    font-size: 2.8rem;
+  }
+  .main__signUp .signUp__card .card__list {
+    font-size: 0.9rem;
+  }
+  .main__signUp .signUp__card .card__list .list__element {
+    padding-left: 30px;
+  }
+  .img__pic {
+    max-height: 30rem;
+  }
+  .success__card {
+    gap: 1rem;
+  }
 }
-
-@media only screen and (max-width: 758px){
-    .main__signUp{
-        max-height: 28rem;
-    }
-    .signUp__card {
-        justify-content: space-evenly;
-    }
-    .img__pic {
-        max-height: 25rem;
-    }
-    .signUp__card {
-        padding: 0 1rem 0 0;
-    }
-    .card__title {
-        font-size: 2rem;
-    }
-    .card__list {
-        font-size: 0.8rem;
-    }
-   
+@media only screen and (max-width: 758px) {
+  .main__signUp {
+    max-height: 28rem;
+  }
+  .main__signUp .signUp__card {
+    justify-content: space-evenly;
+    padding: 0 1rem 0 0;
+  }
+  .main__signUp .signUp__card .card__title {
+    font-size: 2rem;
+  }
+  .main__signUp .signUp__card .card__list {
+    font-size: 0.8rem;
+  }
+  .img__pic {
+    max-height: 25rem;
+  }
 }
-
 @media only screen and (max-width: 648px) {
-    .main {
-        background-color: white;
-        justify-content: flex-start;
-    }
-    .main__signUp {
-        margin: 0;
-        flex-direction: column-reverse;
-        max-height: 100vh;
-        padding: 0;
-        border-radius: 0;
-        justify-content: space-between;
-        margin-top: 10rem;
-    }
-    .img__pic--desktop {
-       display: none;
-    }
-    .img__pic--mobile {
-        display: flex;
-    }
-    .signUp__card {
-        padding: 2rem 1.7rem 0 1.7rem;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-    .card__title {
-        font-size: 2.5rem;
-    }
-    .card__text {
-        font-size: 1rem;
-    }
-    .card__list {
-        font-size: 1.2rem;
-    }
-    .list__element {
-        padding-left: 40px;
-    }
-    .card__form {
-        height: 10rem;
-        margin-top: 4rem;
-    }
-    .attribution {
-        position: static;
-    }
-    .success__card {
-        margin-top: 8rem; 
-    }
+  .main {
+    background-color: white;
+    justify-content: flex-start;
+  }
+  .main .main__signUp {
+    margin: 0;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    padding: 0;
+    border-radius: 0;
+    justify-content: flex-end;
+  }
+  .main .main__signUp .signUp__card {
+    padding: 2rem 1.7rem 0 1.7rem;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .main .main__signUp .signUp__card .card__title {
+    font-size: 2.5rem;
+  }
+  .main .main__signUp .signUp__card .card__text {
+    font-size: 1rem;
+  }
+  .main .main__signUp .signUp__card .card__list {
+    font-size: 1.2rem;
+  }
+  .main .main__signUp .signUp__card .card__list .list__element {
+    padding-left: 40px;
+  }
+  .main .main__signUp .signUp__card .card__form {
+    margin-top: 4rem;
+  }
+  .img__pic--desktop {
+    display: none;
+  }
+  .img__pic--mobile {
+    display: flex;
+  }
+  .attribution {
+    position: static;
+  }
+  .success__card {
+    margin-top: 8rem;
+  }
 }
 
-
+/*# sourceMappingURL=styles.css.map */
