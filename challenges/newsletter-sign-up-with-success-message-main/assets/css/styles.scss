@@ -200,8 +200,7 @@ $tomato: hsl(4, 100%, 67%);
             justify-content: flex-end;
             .signUp__card {
                 padding: 2rem 1.7rem 0 1.7rem;
-                justify-content: space-between;
-                gap: 1rem;
+                gap: 2rem;
                 .card__title {
                     font-size: 2.5rem;
                 }
@@ -230,7 +229,5 @@ $tomato: hsl(4, 100%, 67%);
     .attribution {
         position: static;
     }
-    .success__card {
-        margin-top: 8rem; 
-    }
+    
 }
