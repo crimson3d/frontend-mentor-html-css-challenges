@@ -1,0 +1,15 @@
+@mixin font($weight, $size: 18px) {
+    font-size: $size;
+    font-family: "Rubik", sans-serif;
+    font-weight: $weight;
+}
+
+@mixin cardIcon($file, $color) {
+    background-color: $color;
+    background-image: url(/challenges/time-tracking-dashboard-main/assets/images/#{$file}.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    
+}
+
+

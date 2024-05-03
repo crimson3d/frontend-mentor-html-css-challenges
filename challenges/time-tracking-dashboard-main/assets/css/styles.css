@@ -1,0 +1,225 @@
+.main .main__container .container__card, .main .main__container .container__left .left__user {
+  border-radius: 15px;
+}
+
+.main .main__container .container__card .card__body, .main .main__container .container__left {
+  background-color: hsl(235, 46%, 20%);
+}
+
+.main .main__container .container__left .left__user .user__avatar {
+  width: 100%;
+  height: auto;
+  max-width: 5.4rem;
+  min-width: 5rem;
+}
+
+.main .main__container .container__card, .main .main__container .container__left .left__timeframes, .main .main__container .container__left .left__user .user__text, .main .main__container .container__left .left__user, .main {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: hsl(226, 43%, 10%);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main .main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 100rem;
+  gap: 2rem;
+  margin: 0 1rem 1rem 1rem;
+}
+.main .main__container .container__left {
+  grid-row: span 2;
+  border-radius: 0 0 10px 10px;
+}
+.main .main__container .container__left .left__user {
+  background-color: hsl(246, 80%, 60%);
+  color: hsl(236, 100%, 87%);
+  gap: 2rem;
+  padding: 2rem 8.5rem 5.2rem 2rem;
+}
+.main .main__container .container__left .left__user .user__avatar {
+  border-radius: 100%;
+  border: 3px solid white;
+}
+.main .main__container .container__left .left__user .user__text {
+  gap: 0.3rem;
+}
+.main .main__container .container__left .left__user .user__text .text__report {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+.main .main__container .container__left .left__user .user__text .text__name {
+  font-size: 40px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: white;
+  max-width: 50px;
+}
+.main .main__container .container__left .left__timeframes {
+  gap: 1.2rem;
+  padding: 1.9rem 6rem 2rem 2rem;
+}
+.main .main__container .container__left .left__timeframes .timeframes__text {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+.main .main__container .container__left .left__timeframes .timeframes__text:hover {
+  color: white;
+  cursor: pointer;
+}
+.main .main__container .container__card .card__top {
+  padding: 1.5rem;
+  border-radius: 15px 15px 0 0;
+}
+.main .main__container .container__card .card__top--orange {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(/challenges/time-tracking-dashboard-main/assets/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+.main .main__container .container__card .card__top--blue {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(/challenges/time-tracking-dashboard-main/assets/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+.main .main__container .container__card .card__top--red {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(/challenges/time-tracking-dashboard-main/assets/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+.main .main__container .container__card .card__top--green {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(/challenges/time-tracking-dashboard-main/assets/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+.main .main__container .container__card .card__top--purple {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(/challenges/time-tracking-dashboard-main/assets/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+.main .main__container .container__card .card__top--yellow {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(/challenges/time-tracking-dashboard-main/assets/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+.main .main__container .container__card .card__body {
+  height: 100%;
+  border-radius: 12px;
+}
+.main .main__container .container__card .card__body .body__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7rem 2rem;
+}
+.main .main__container .container__card .card__body .body__info .info__title {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+.main .main__container .container__card .card__body .body__time {
+  font-size: 52px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding: 0 2rem;
+}
+.main .main__container .container__card .card__body .body__lastTime {
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+  padding: 0 1.9rem;
+  margin-top: 0.5rem;
+}
+.main .main__container .container__card .card__body:hover {
+  background-color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+.main .main__container .container__card--orange {
+  background-color: hsl(15, 100%, 70%);
+}
+.main .main__container .container__card--blue {
+  background-color: hsl(195, 74%, 62%);
+}
+.main .main__container .container__card--red {
+  background-color: hsl(348, 100%, 68%);
+}
+.main .main__container .container__card--green {
+  background-color: hsl(145, 58%, 55%);
+}
+.main .main__container .container__card--purple {
+  background-color: hsl(264, 64%, 52%);
+}
+.main .main__container .container__card--yellow {
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media only screen and (max-width: 945px) {
+  .main .main__container {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 865px) {
+  .main .main__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .main .main__container .container__left {
+    grid-row: span 1;
+    grid-column: span 3;
+  }
+  .main .main__container .container__left .left__user {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  .main .main__container .container__left .left__user .user__text {
+    justify-content: center;
+  }
+  .main .main__container .container__left .left__user .user__text .text__name {
+    max-width: 20rem;
+  }
+  .main .main__container .container__left .left__timeframes {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main .main__container {
+    grid-template-columns: 0;
+    grid-template-rows: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .card__body {
+    padding-bottom: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

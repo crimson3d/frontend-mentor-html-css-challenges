@@ -1,0 +1,204 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/extends";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: $blueBackground;
+    @extend %flexColumn;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 100rem;
+        gap: 2rem;
+        margin: 0 1rem 1rem 1rem;
+        .container__left {
+            grid-row: span 2;
+            @extend %defaultCardColor;
+            border-radius: 0 0 10px 10px;
+            .left__user {
+                background-color: $blueLeftCard;
+                color: hsl(236, 100%, 87%);
+                @extend %flexColumn;
+                gap: 2rem;
+                padding: 2rem 8.5rem 5.2rem 2rem;
+                @extend %roundCorners;
+                .user__avatar {
+                    @extend %responsiveIMG;
+                    border-radius: 100%;
+                    border: 3px solid white;
+                }
+                .user__text {
+                    @extend %flexColumn;
+                    gap: 0.3rem;
+                    .text__report {
+                        @include font(300, 16px);
+                        color: $fontColorB;
+                    }
+                    .text__name {
+                        @include font(300, 40px);
+                        color: $white;
+                        max-width: 50px;
+                    }
+                }
+            }
+            .left__timeframes {
+                @extend %flexColumn;
+                gap: 1.2rem;
+                padding: 1.9rem 6rem 2rem 2rem;
+               .timeframes__text {
+                @include font(300);
+                color: $fontColorB;
+                    &:hover {
+                        color: $white;
+                        cursor: pointer;
+                    }
+               }
+            }
+        }
+        .container__card {
+            @extend %flexColumn;
+            @extend %roundCorners;
+            .card__top {
+                padding: 1.5rem;
+                border-radius: 15px 15px 0 0;
+            }
+            .card__top--orange {
+                @include cardIcon('icon-work', $orangeWorkCard);
+            }
+            .card__top--blue {
+                @include cardIcon('icon-play', $bluePlayCard);
+            }
+            .card__top--red {
+                @include cardIcon('icon-study', $redStudyCard);
+            }
+            .card__top--green {
+                @include cardIcon('icon-exercise', $greenExerciseCard);
+            }
+            .card__top--purple {
+                @include cardIcon('icon-social', $violetSocialCard);
+            }
+            .card__top--yellow {
+                @include cardIcon('icon-self-care', $yellowSelfCard);
+            }
+            .card__body {
+                @extend %defaultCardColor;
+                height: 100%;
+                border-radius: 12px;
+                .body__info {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1.7rem 2rem;
+                    .info__title {
+                        @include font(400);
+                        color: $white;
+                    }
+                }
+                .body__time {
+                    @include font(300, 52px);
+                    color: $white;
+                    padding: 0 2rem;
+                }
+                .body__lastTime {
+                    @include font(300, 15px);
+                    color: $fontColorB;
+                    padding: 0 1.9rem;;
+                    margin-top: 0.5rem;
+                }
+                &:hover {
+                    background-color: $hoverBlue;
+                    cursor: pointer;
+                }
+            }
+        }
+        .container__card--orange {
+            background-color: $orangeWorkCard;
+        }
+        .container__card--blue {
+            background-color: $bluePlayCard;
+        }
+        .container__card--red {
+            background-color: $redStudyCard;
+        }
+        .container__card--green {
+            background-color: $greenExerciseCard;
+        }
+        .container__card--purple {
+            background-color: $violetSocialCard;
+        }
+        .container__card--yellow {
+            background-color: $yellowSelfCard;
+        }
+    }
+}
+
+@media only screen and (max-width: 945px){
+    .main {
+        .main__container {
+            gap: 1rem;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 865px){
+    .main {
+        .main__container {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            .container__left {
+                grid-row: span 1;
+                grid-column: span 3;
+                .left__user {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem 1rem;
+                    .user__text {
+                        justify-content: center;
+                        .text__name {
+                            max-width: 20rem;
+                        }
+                    }
+                }
+                .left__timeframes {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main {
+        .main__container {
+            grid-template-columns: 0;
+            grid-template-rows: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .card__body {
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+
+
+
+

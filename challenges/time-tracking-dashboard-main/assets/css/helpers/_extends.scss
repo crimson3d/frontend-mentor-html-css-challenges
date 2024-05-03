@@ -1,0 +1,19 @@
+%roundCorners {
+    border-radius: 15px;
+}
+
+%defaultCardColor {
+    background-color: $darkBlueCard;
+}
+
+%responsiveIMG {
+    width: 100%;
+    height: auto;
+    max-width: 5.4rem;
+    min-width: 5rem;
+}
+
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+}

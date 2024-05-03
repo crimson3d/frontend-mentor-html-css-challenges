@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="main">
+  <section class="main__container">
+    <div class="container__left">
+      <div class="left__user">
+        <img src="assets/images/image-jeremy.png" alt="image-jeremy" class="user__avatar" />
+        <div class="user__text">
+          <h2 class="text__report">Report for</h2>
+          <h1 class="text__name">Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="left__timeframes">
+        <h2 class="timeframes__text" id="daily">Daily</h2>
+        <h2 class="timeframes__text" id="weekly">Weekly</h2>
+        <h2 class="timeframes__text" id="monthly">Monthly</h2>
+      </div>
+    </div>
+
+    <div class="container__card container__card--orange">
+      <div class="card__top card__top--orange"></div>
+      <div class="card__body">
+        <div class="body__info">
+          <h2 class="info__title">Work</h2>
+          <div class="info__icon">
+            <img src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis" />
+          </div>
+        </div>
+          <div class="body__time" id="workTime"></div>
+          <div class="body__lastTime" id="lastWorkTime"></div>
+      </div>
+    </div>
+    
+    <div class="container__card container__card--blue">
+      <div class="card__top card__top--blue"></div>
+      <div class="card__body">
+        <div class="body__info">
+          <h2 class="info__title">Play</h2>
+          <div class="info__icon">
+            <img src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis" />
+          </div>
+        </div>
+          <div class="body__time" id="playTime"></div>
+          <div class="body__lastTime" id="lastPlayTime"></div>
+      </div>
+    </div>
+
+    <div class="container__card container__card--red">
+      <div class="card__top card__top--red"></div>
+      <div class="card__body">
+        <div class="body__info">
+          <h2 class="info__title">Study</h2>
+          <div class="info__icon">
+            <img src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis" />
+          </div>
+        </div>
+          <div class="body__time" id="studyTime"></div>
+          <div class="body__lastTime" id="lastStudyTime"></div>
+      </div>
+    </div>
+
+    <div class="container__card container__card--green">
+      <div class="card__top card__top--green"></div>
+      <div class="card__body">
+        <div class="body__info">
+          <h2 class="info__title">Exercise</h2>
+          <div class="info__icon">
+            <img src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis" />
+          </div>
+        </div>
+          <div class="body__time" id="exerciseTime"></div>
+          <div class="body__lastTime" id="lastExerciseTime"></div>
+      </div>
+    </div>
+
+    <div class="container__card container__card--purple">
+      <div class="card__top card__top--purple"></div>
+      <div class="card__body">
+        <div class="body__info">
+          <h2 class="info__title">Social</h2>
+          <div class="info__icon">
+            <img src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis" />
+          </div>
+        </div>
+          <div class="body__time" id="socialTime"></div>
+          <div class="body__lastTime" id="lastSocialTime"></div>
+      </div>
+    </div>
+
+    <div class="container__card container__card--yellow">
+      <div class="card__top card__top--yellow"></div>
+      <div class="card__body">
+        <div class="body__info">
+          <h2 class="info__title">Self Care</h2>
+          <div class="info__icon">
+            <img src="assets/images/icon-ellipsis.svg" alt="icon-ellipsis" />
+          </div>
+        </div>
+          <div class="body__time" id="selfCareTime"></div>
+          <div class="body__lastTime" id="lastSelfCareTime"></div>
+      </div>
+    </div>
+   
+  </section>
+
+  <div class="main__attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://crimson3d.github.io/frontend-mentor-html-css-challenges/index.html">José Antonio Sánchez</a>.
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
