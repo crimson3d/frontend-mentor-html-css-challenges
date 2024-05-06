@@ -94,7 +94,7 @@
 }
 .main .main__container .container__card .card__top--blue {
   background-color: hsl(195, 74%, 62%);
-  background-image: url(/challenges/time-tracking-dashboard-main/assets/images/icon-play.svg);
+  background-image: url(https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/time-tracking-dashboard-main/assets/images/icon-play.svg);
   background-repeat: no-repeat;
   background-position: 90%;
 }
