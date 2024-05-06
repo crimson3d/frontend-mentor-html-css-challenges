@@ -24,6 +24,13 @@
   box-sizing: border-box;
 }
 
+.active {
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: "Rubik", sans-serif;
+}
+
 .main {
   background-color: hsl(226, 43%, 10%);
   justify-content: center;
