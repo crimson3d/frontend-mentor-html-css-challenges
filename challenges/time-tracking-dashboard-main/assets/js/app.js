@@ -4,7 +4,7 @@ let dataTime = [];
 // Función para recuperar datos del JSON
 async function fetchData() {
     try {
-        const response = await fetch('/challenges/time-tracking-dashboard-main/data.json');
+        const response = await fetch('https://crimson3d.github.io/frontend-mentor-html-css-challenges/challenges/time-tracking-dashboard-main/data.json');
         dataTime = await response.json();
         showData('option1');
         showData('option2');
