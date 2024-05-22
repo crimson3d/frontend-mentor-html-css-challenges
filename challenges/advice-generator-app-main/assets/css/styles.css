@@ -55,10 +55,17 @@
     position: absolute;
     bottom: -33px;
     cursor: pointer;
+    transition: transform 1s;
 }
 
 .card__dice:hover {
     box-shadow: 2px 0 40px hsl(150, 100%, 66%);
+}
+
+.clicked {
+    transform: rotate(360deg);
+    background-color: hsl(217, 19%, 24%);
+    pointer-events: none;
 }
 
 @media  only screen and (max-width: 540px) {

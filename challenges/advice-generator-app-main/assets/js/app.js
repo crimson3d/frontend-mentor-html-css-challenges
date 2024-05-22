@@ -12,4 +12,16 @@ function getAdvice() {
         .catch(error => console.error('Error:', error));
 };
 
-button.addEventListener("click", getAdvice);
+document.addEventListener('DOMContentLoaded', (event) => {
+    getAdvice();
+});
+
+button.addEventListener("click", () => {
+    if (!button.classList.contains("clicked")) {
+        button.classList.add("clicked");
+        setTimeout(() => {
+            button.classList.remove("clicked");
+        }, 2000);
+    }
+    getAdvice();
+});
