@@ -32,6 +32,10 @@
     margin: 1rem;
 }
 
+.card__img__mobile--mblAdapt {
+    max-width: 100%;
+}
+
 .card__title {
     font-size: 0.9rem;
     text-transform: uppercase;
