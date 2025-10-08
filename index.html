@@ -12,10 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="output.css" rel="stylesheet" />
-    </script>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200 overflow-x-hidden">
     <div class="flex flex-col min-h-screen">
         <header
             class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
@@ -37,11 +36,26 @@
                 </div>
                 <div class="flex items-center gap-4">
                     <button
-                        class="md:hidden flex items-center justify-center rounded-lg h-10 w-10 bg-primary-light text-primary dark:bg-primary-dark dark:text-white">
+                        id="mobile-menu-btn"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        class="md:hidden flex items-center justify-center rounded-lg h-10 w-10 bg-primary-light text-primary dark:bg-primary-dark dark:text-white cursor-pointer">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
             </nav>
+            <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+                <div class="flex flex-col gap-4 mt-2">
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        href="#about">Sobre mi</a>
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        href="#projects">Proyectos</a>
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        href="#skills">Habilidades</a>
+                    <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+                        href="#contact">Contacto</a>
+                </div>
+            </div>
         </header>
         <main class="flex-grow container mx-auto px-6 py-16">
             <section class="flex flex-col md:flex-row items-center gap-12 mb-24" id="hero">
@@ -73,15 +87,15 @@
             </section>
             <section class="mb-24 scroll-mt-24" id="projects">
                 <h2 class="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Proyectos</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-[4px]">
-                    <a class="block group w-md mx-auto" href="https://pckt.link" target="_blank">
-                        <div class="w-full aspect-square rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300 flex items-center justify-center"
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-10">
+                    <a class="block group w-full mx-auto lg:mx-0 lg:justify-self-end max-w-sm lg:max-w-md" href="https://pckt.link" target="_blank" rel="noopener noreferrer">
+                        <div class="w-full aspect-square overflow-hidden rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300 flex items-center justify-center"
                             style="background-color: #4CC9F0; background-image: linear-gradient(to bottom right, #4CC9F0 0%, #4895EF 50%, #4361EE 100%);">
                             <img src="assets/media/Pocketlink.svg" alt="Pocketlink logo" class="w-3/4 h-auto">
                         </div>
                     </a>
-                    <a class="block group w-md mx-auto" href="https://medilens.es/" target="_blank">
-                        <div class="w-full aspect-square rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-[#F25939]">
+                    <a class="block group w-full mx-auto lg:mx-0 lg:justify-self-start max-w-sm lg:max-w-md" href="https://medilens.es/" target="_blank" rel="noopener noreferrer">
+                        <div class="w-full aspect-square overflow-hidden rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-300 flex items-center justify-center bg-[#F25939]">
                             <img src="assets/media/medilens.svg" alt="Medilens logo" class="w-3/4 h-auto">
                         </div>
                     </a>
@@ -192,6 +206,22 @@
                         statusEl.textContent = 'Error de conexión.';
                     }
                 });
+
+                const menuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (menuBtn && mobileMenu) {
+                    menuBtn.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                        const icon = menuBtn.querySelector('.material-symbols-outlined');
+                        if (icon) {
+                            icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+                        }
+                        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                        const labelText = expanded ? 'Abrir menú móvil' : 'Cerrar menú móvil';
+                        menuBtn.setAttribute('aria-label', labelText);
+                        menuBtn.setAttribute('aria-expanded', (!expanded).toString());
+                    });
+                }
             </script>
         </main>
         <footer class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 mt-16">
