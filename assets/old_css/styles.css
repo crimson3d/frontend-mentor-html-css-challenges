@@ -1,0 +1,272 @@
+
+/* Paleta de color
+UT ORANGE - FF8811
+JASMINE - F4D06F
+FLORAL WHITE - FFF8F0
+TIFFANY BLUE - 9DD9D2
+SPACE CADET - 392F5A
+#d00000 */
+
+/* Fuentes
+TEXTO: font-family: "Afacad", sans-serif; 
+TITULOS: font-family: "Angkor", serif; */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bodyContainer{
+    font-family: "Inter", sans-serif;
+}
+
+.bodyContainer__menu {
+    position: fixed;
+    top: 0px;
+    height: 4.5rem;
+    width: 100%;
+    background-color: #392F5A;
+    padding: 3.5rem;
+    font-family: "Space Grotesk", sans-serif;
+    z-index: 1;
+}
+
+.menu__nav {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    height: 100%;
+}
+
+.nav__element a {
+   text-decoration: none;
+   color: #FFF8F0;
+   font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+   transition: 0.5s;
+}
+
+.nav__element a:hover {
+    color: #F4D06F;
+}
+
+.bodyContainer__welcome, .bodyContainer__footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF8F0;
+}
+
+.bodyContainer__footer {
+    position: relative;
+}
+
+.welcome__title {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(4.24rem, 1.44vw + 3.87rem, 5.03rem);
+    color: #d00000;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 1.25;
+}
+
+.welcome__text {
+    color: rgb(102, 102, 102);
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    max-width: 70%;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.75;
+    text-wrap: balance;
+}
+
+.subtitle__variation {
+   margin-right: 0.3rem;
+   color: #392F5A;
+   filter: blur(1px);
+   font-family: "Space Grotesk", sans-serif;
+}
+
+/* Botones: asegurar Inter */
+button {
+    font-family: "Inter", sans-serif;
+}
+
+/* Destacados: usar Space Grotesk */
+strong {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.bodyContainer__projects {
+    background-color: #ff6200;
+}
+
+
+.projects__project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 2rem;
+    /* max-width: 80%; */
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.projects__title{
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.project__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    /* box-shadow: 2px 2px 2px #FFF8F0; */
+    background-color: #FFF8F0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.project__card a {
+    text-decoration: none;
+    margin: 20px;
+    font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+    color: #392F5A;
+    transition: 0.5s;
+}
+
+.project__title {
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    color: #392F5A;
+    padding: 1rem 0;
+}
+
+.project__card a:hover {
+    color: #F4D06F;
+}
+
+.project__card p {
+    margin: 0 40px 20px 40px;
+    color: rgb(102, 102, 102);
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+}
+
+.footer__title {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
+    color: #392F5A;
+    text-transform: uppercase;
+}
+
+.footer__social {
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.social__link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.3rem;
+    color: #d00000;
+    font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+    transition: 0.2s;
+}
+
+.social__link a:hover {
+    color: #F4D06F;
+}
+
+.bodyContainer__divisor {
+    border: 2px solid #d00000;
+    width: 100%;
+    position: absolute;
+    bottom: 5rem;
+}
+
+.footer__bottom {
+    position: absolute;
+    bottom: 2rem;
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    text-transform: uppercase;
+    color: #392F5A;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .footer__social {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .menu__nav {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .welcome__title {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+    color: #d00000;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 1.1;
+}
+
+    .welcome__text {
+        max-width: 70%;
+        font-size: clamp(0.95rem, 0.6vw + 0.85rem, 1.1rem);
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .nav__element a {
+        font-size: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+    }
+
+    .bodyContainer__footer {
+        justify-content: center;
+        height: 45rem;
+        gap: 2rem;
+    }
+
+    .footer__social {
+        gap: 4rem;
+        flex-direction: column;
+        margin-top: 2;
+        margin-bottom: 8rem;
+    }
+
+    .footer__bottom {
+        font-size: clamp(0.62rem, 0.21vw + 0.57rem, 0.73rem);
+        max-width: 20rem;
+    }
+}
+
+/* --font-size-sm: clamp(0.62rem, 0.21vw + 0.57rem, 0.73rem);
+--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+--font-size-md: clamp(1.62rem, 0.55vw + 1.48rem, 1.92rem);
+--font-size-lg: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
+--font-size-xl: clamp(4.24rem, 1.44vw + 3.87rem, 5.03rem);
+--font-size-xxl: clamp(6.85rem, 2.34vw + 6.27rem, 8.14rem);
+--font-size-xxxl: clamp(11.09rem, 3.78vw + 10.14rem, 13.17rem); */
