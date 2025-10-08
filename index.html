@@ -18,7 +18,7 @@
     <div class="flex flex-col min-h-screen">
         <header
             class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
-            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
                 <a class="flex items-center gap-3 text-gray-900 dark:text-white" href="#">
                     <img class="h-6 w-6" src="https://cdn.simpleicons.org/devbox/6366f1?viewbox=auto&size=24"
                         alt="Devbox">
@@ -44,7 +44,7 @@
                     </button>
                 </div>
             </nav>
-            <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 flex flex-col w-max ml-auto">
+            <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 absolute right-0 top-full rounded-lg bg-white dark:bg-gray-800 shadow-lg ring-1 ring-gray-200 dark:ring-gray-700 p-4">
                 <div class="flex flex-col gap-4 mt-2">
                     <a class="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
                         href="#about">Sobre mi</a>
